@@ -63,7 +63,7 @@ export const orbitalElements = {
         epoch: 2451545.0, // Tempo juliano
         link: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/moon_1024.jpg',
         name: 'Lua',
-        sizeOf: '10',
+        sizeOf: '3',
         distance: '384 mil km',
     },
     
@@ -88,9 +88,9 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(212.42),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(236.0),
         epoch: 2451545.0,
-        link: 'https://cdn.pixabay.com/photo/2022/06/30/02/16/mercury-7292788_1280.jpg',
+        link: 'https://lh4.googleusercontent.com/proxy/_J0h01q8yY5_bB1jm52HTUYUgqKvM-O0XT86aVczsQLGApv0_pzwy_Y7R-SMro96-2CXcZuC0XjGtcJbX7E1EGcKqW0p4C86jwaFCaMRUPSObfljziHw',
         name: 'Phobos',
-        sizeOf: '10', //1.5
+        sizeOf: '2', //1.5
         distance: '58 milhões de km'
     },
     deimos: {
@@ -101,9 +101,9 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(122.38),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(229.76),
         epoch: 2451545.0,
-        link:'https://lh4.googleusercontent.com/proxy/_J0h01q8yY5_bB1jm52HTUYUgqKvM-O0XT86aVczsQLGApv0_pzwy_Y7R-SMro96-2CXcZuC0XjGtcJbX7E1EGcKqW0p4C86jwaFCaMRUPSObfljziHw',
+        link:'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5938ae9e-47de-424a-8836-f98e6658d37b/dczaq88-d97d6ecd-a233-48a8-b1bc-74fd3327f95c.png/v1/fill/w_1264,h_632,q_70,strp/deimos_texture_map_by_askaniy_dczaq88-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjA0OCIsInBhdGgiOiJcL2ZcLzU5MzhhZTllLTQ3ZGUtNDI0YS04ODM2LWY5OGU2NjU4ZDM3YlwvZGN6YXE4OC1kOTdkNmVjZC1hMjMzLTQ4YTgtYjFiYy03NGZkMzMyN2Y5NWMucG5nIiwid2lkdGgiOiI8PTQwOTYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.hNuoyXLVNFXX4E21fnZN6hAhDAW1VPNBsNdDzYwmGhk',
         name: 'Deimos',
-        sizeOf: '10', //0.004
+        sizeOf: '2', //0.004
         distance: '23,5 mil km'
     },
     
@@ -150,6 +150,16 @@ export function createAllPlanets(textureLoader, scene) {
         let NomeParaAdicionar = document.getElementById("nome-do-planeta");
         NomeParaAdicionar.innerHTML = NomeParaAdicionar.innerHTML + `<option value="${num}">${planet.name}</option>`;
         num++;
+        
     }
+    planets[2].add(planets[3]);
+    planets[3].position.set(2, 0, 0);
+
+    planets[4].add(planets[5]);
+    planets[5].position.set(1, 0, 0);
+
+    planets[4].add(planets[6]);
+    planets[6].position.set(2, 0, 0);
+
     return planets;
 }

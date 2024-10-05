@@ -1,4 +1,4 @@
-import {onDocumentMouseWheel, onDocumentMouseDown} from './js/io.js';
+
 import {createPlanet, createAllPlanets, orbitalElements} from './js/planets.js';
 import {updateOrbit} from './js/orbits.js';
 import { showPlanetInfo } from './js/hud.js';
@@ -14,6 +14,7 @@ document.getElementById('earth-container').appendChild(renderer.domElement);
 
 // Carregador de texturas
 const textureLoader = new THREE.TextureLoader();
+
 
 
 // Criação do Sol com brilho emissivo
@@ -49,30 +50,36 @@ let isPaused = false;
 // Períodos orbitais (aproximados em anos e dias da Terra)
 
 const orbitalPeriods = {
-    earth: 365,
-    moon: 27.3,
-    venus: 225,
-    mercury: 88,
-    mars: 687,
-    saturn: 10759 // Saturno: 29.5 anos terrestres
+    earth: 3650,
+    moon: 273,
+    venus: 2250,
+    mercury: 880,
+    mars: 6870,
+    phobos: 12.5,
+    deimos: 30.3,
+    saturn: 107590 // Saturno: 29.5 anos terrestres
 };
 
 // Conversão dos períodos orbitais em velocidades de translação
 const orbitalSpeeds = {
-    earth: 1 / orbitalPeriods.earth,
+    earth: 1  / orbitalPeriods.earth,
     moon: 1 / orbitalPeriods.moon,
     venus: 1 / orbitalPeriods.venus,
     mercury: 1 / orbitalPeriods.mercury,
     mars: 1 / orbitalPeriods.mars,
+    phobos: 1 /orbitalPeriods.phobos,
+    deimos: 1 / orbitalPeriods.deimos,
     saturn: 1 / orbitalPeriods.saturn
 };
 
 // Variáveis de órbita e ângulos para os planetas
 let earthOrbit = { radius: 150, speed: orbitalSpeeds.earth, angle: 0 };
-let moonOrbit = { radius: 10, speed: orbitalSpeeds.moon, angle: 0 };
+let moonOrbit = { radius: 30, speed: orbitalSpeeds.moon, angle: 0 };
 let venusOrbit = { radius: 108, speed: orbitalSpeeds.venus, angle: 0 };
 let mercuryOrbit = { radius: 58, speed: orbitalSpeeds.mercury, angle: 0 };
 let marsOrbit = { radius: 228, speed: orbitalSpeeds.mars, angle: 0 };
+let phobosOrbit = { radius: 30, speed: orbitalSpeeds.deimos, angle: 0 };
+let deimosOrbit = { radius: 30, speed: orbitalSpeeds.deimos, angle: 0 };
 let jupiterOrbit = { radius: 450, speed: orbitalSpeeds.saturn, angle: 0 };
 let saturnOrbit = { radius: 600, speed: orbitalSpeeds.saturn, angle: 0 };
 
@@ -83,22 +90,24 @@ const venusRotationSpeed = 0.0004;
 const earthRotationSpeed = 0.01;
 const moonRotationSpeed = 0.001;
 const marsRotationSpeed = 0.008;
-const jupiterRotationSpeed = 0.003
+const phobosRotationSpeed = 0.001;
+const deimosRotationSpeed = 0.001;
+const jupiterRotationSpeed = 0.003;
 const saturnRotationSpeed = 0.005;
 
-// window.addEventListener('mousedown', onDocumentMouseDown, false);
 
 // Animação
 function animate() {
-    if (!isPaused) {
         // Movimentação orbital
-        earthOrbit.angle = updateOrbit(planets[2], earthOrbit.radius, earthOrbit.speed, earthOrbit.angle, isPaused);
-        moonOrbit.angle = updateOrbit(planets[3], moonOrbit.radius, moonOrbit.speed, moonOrbit.angle, isPaused);
-        venusOrbit.angle = updateOrbit(planets[1], venusOrbit.radius, venusOrbit.speed, venusOrbit.angle, isPaused);
-        mercuryOrbit.angle = updateOrbit(planets[0], mercuryOrbit.radius, mercuryOrbit.speed, mercuryOrbit.angle, isPaused);
-        marsOrbit.angle = updateOrbit(planets[4], marsOrbit.radius, marsOrbit.speed, marsOrbit.angle, isPaused);
-        jupiterOrbit.angle = updateOrbit(planets[5], marsOrbit.radius, marsOrbit.speed, marsOrbit.angle, isPaused);
-        saturnOrbit.angle = updateOrbit(planets[6], saturnOrbit.radius, saturnOrbit.speed, saturnOrbit.angle, isPaused);
+        earthOrbit.angle = updateOrbit(planets[2], earthOrbit.radius, earthOrbit.speed, earthOrbit.angle);
+        moonOrbit.angle = updateOrbit(planets[3], moonOrbit.radius, moonOrbit.speed, moonOrbit.angle);
+        venusOrbit.angle = updateOrbit(planets[1], venusOrbit.radius, venusOrbit.speed, venusOrbit.angle);
+        mercuryOrbit.angle = updateOrbit(planets[0], mercuryOrbit.radius, mercuryOrbit.speed, mercuryOrbit.angle);
+        marsOrbit.angle = updateOrbit(planets[4], marsOrbit.radius, marsOrbit.speed, marsOrbit.angle);
+        phobosOrbit.angle = updateOrbit(planets[5], phobosOrbit.radius, phobosOrbit.speed, phobosOrbit.angle);
+        deimosOrbit.angle = updateOrbit(planets[6], deimosOrbit.radius, deimosOrbit.speed, deimosOrbit.angle);
+        jupiterOrbit.angle = updateOrbit(planets[7], jupiterOrbit.radius, jupiterOrbit.speed, jupiterOrbit.angle);
+        saturnOrbit.angle = updateOrbit(planets[8], saturnOrbit.radius, saturnOrbit.speed, saturnOrbit.angle);
 
         // Rotação dos planetas
         planets[0].rotation.y += mercuryRotationSpeed;
@@ -106,64 +115,16 @@ function animate() {
         planets[2].rotation.y += earthRotationSpeed;
         planets[3].rotation.y += moonRotationSpeed;
         planets[4].rotation.y += marsRotationSpeed;
-        planets[5].rotation.y += jupiterRotationSpeed;
-        planets[6].rotation.y += saturnRotationSpeed;
-    }
-
+        planets[5].rotation.y += phobosRotationSpeed;
+        planets[6].rotation.y += deimosRotationSpeed;
+        planets[7].rotation.y += jupiterRotationSpeed;
+        planets[8].rotation.y += saturnRotationSpeed;
+    
+    
     // Renderização
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
 }
-
-// Adiciona o evento de rolagem do mouse para controlar o zoom
-// window.addEventListener('wheel', onDocumentMouseWheel, false);
-
-// Variáveis para controle do movimento da câmera com o mouse
-let isMouseDown = false;
-let previousMousePosition = {
-    x: 0,
-    y: 0
-};
-
-// Sensibilidade da rotação
-const rotationSpeed = 0.005;
-
-// Função para detectar quando o mouse é pressionado
-function onMouseDown(event) {
-    isMouseDown = true;
-    previousMousePosition.x = event.clientX;
-    previousMousePosition.y = event.clientY;
-}
-
-// Função para detectar quando o mouse é solto
-function onMouseUp(event) {
-    isMouseDown = false;
-}
-
-// Função para detectar o movimento do mouse e rotacionar a câmera
-function onMouseMove(event) {
-    if (!isMouseDown) return;
-
-    const deltaX = event.clientX - previousMousePosition.x;
-    const deltaY = event.clientY - previousMousePosition.y;
-
-    // Rotaciona a câmera em torno do eixo Y (esquerda/direita)
-    camera.rotation.y -= deltaX * rotationSpeed;
-
-    // Rotaciona a câmera em torno do eixo X (cima/baixo), mas com limite para evitar que a câmera vire completamente
-    camera.rotation.x -= deltaY * rotationSpeed;
-    camera.rotation.x = Math.max(Math.PI / -2, Math.min(Math.PI / 2, camera.rotation.x)); // Limita a rotação no eixo X
-
-    previousMousePosition.x = event.clientX;
-    previousMousePosition.y = event.clientY;
-
-    camera.updateProjectionMatrix();
-}
-
-// // Adiciona os eventos do mouse
-// window.addEventListener('mousedown', onMouseDown, false);
-// window.addEventListener('mouseup', onMouseUp, false);
-// window.addEventListener('mousemove', onMouseMove, false);
 
 animate();
 
