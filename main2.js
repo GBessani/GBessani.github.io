@@ -3,10 +3,10 @@ import {createPlanet, createAllPlanets, orbitalElements} from './js/planets.js';
 import {updateOrbit} from './js/orbits.js';
 
 export const scene = new THREE.Scene();
-export const camera = new THREE.PerspectiveCamera(45, (window.innerWidth/100*85) / window.innerHeight, 0.1, 3000);
+export const camera = new THREE.PerspectiveCamera(45, (window.innerWidth/100*85) / (window.innerHeight-4), 0.1, 3000);
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth/100*85, window.innerHeight);
+renderer.setSize(window.innerWidth/100*85, window.innerHeight-4);
 renderer.shadowMap.enabled = false; // Habilitar sombras
 document.getElementById('earth-container').appendChild(renderer.domElement);
 
