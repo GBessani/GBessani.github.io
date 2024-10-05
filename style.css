@@ -1,0 +1,78 @@
+#objectSelector {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  z-index: 10;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo para o botão de reset */
+#reset-camera-btn {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  z-index: 10;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reset-camera-btn:hover {
+  background-color: #1c7ed6;
+}
+
+/* Estilo para a caixa de informações */
+#info-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid blue;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  display: none;
+  z-index: 10;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+#info-box.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos adicionais para o conteúdo */
+#info-box h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffdd00; /* Cor do título */
+}
+
+#info-box p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+#info-box p strong {
+  color: #1e90ff; /* Destaque nos textos */
+}
