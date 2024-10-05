@@ -7,11 +7,15 @@ export const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.shadowMap.enabled = true; // Habilitar sombras
+renderer.shadowMap.enabled = false; // Habilitar sombras
 document.getElementById('earth-container').appendChild(renderer.domElement);
 
+
+
+
 // Carregador de texturas
-const textureLoader = new THREE.TextureLoader();2
+const textureLoader = new THREE.TextureLoader();
+
 
 // Criação do Sol com brilho emissivo
 const sun = createPlanet(30, 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Map_of_the_full_sun.jpg/1280px-Map_of_the_full_sun.jpg', 0xffdd00, textureLoader);
@@ -44,9 +48,9 @@ export let originalCameraPosition = camera.position.clone();
 let isPaused = false;
 
 // Períodos orbitais (aproximados em anos e dias da Terra)
-const daysInYear = 365;
+
 const orbitalPeriods = {
-    earth: daysInYear,
+    earth: 365,
     moon: 27.3,
     venus: 225,
     mercury: 88,
