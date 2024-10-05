@@ -49,7 +49,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(358.617),  // Graus convertidos em radianos
         epoch: 2451545.0, // Tempo juliano
         link: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_atmos_2048.jpg',
-        sizeOf: 10, //3.9
+        sizeOf: '10', //3.9
         name:```'Earth',
         Size: ' Diameter of about 12,742 km, the largest of the rocky planets',
         Mass: ' About 5.97 x 10²⁴ kg',
@@ -98,6 +98,7 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(131.532),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(50.115),
         epoch: 2451545.0,
+        sizeOf: '10',
         link: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg',
         name: ```'Vênus',
         Size: ' Diameter of approximately 12,104 km, just slightly smaller than Earth\s', 
