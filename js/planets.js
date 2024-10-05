@@ -70,11 +70,8 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(115.365),  // Graus convertidos em radianos
         epoch: 2451545.0, // Tempo juliano
         link: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/moon_1024.jpg',
-<<<<<<< HEAD
-        name: 'Lua',
         sizeOf: '3',
         distance: '384 mil km',
-=======
         name: ```'Lua',
         Size: 'Approximately 3,474 km, making it the fifth-largest natural satellite in the Solar System',
         Mass: 'About 7.35 x 10²² kg, or roughly 1.2% of Earth\s mass',
@@ -121,6 +118,7 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(29.124),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(174.796),
         epoch: 2451545.0,
+        sizeOf: '10',
         link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHHhttyRZnbpliW8ftwD7BQUZs6aTPmI7eQ&s',
         name: ```'Mercury',
         Size: ' Diameter of approximately 4,880 km', //1.5
@@ -132,7 +130,6 @@ export const orbitalElements = {
         Orbit: ' Orbital period: Mercury completes a revolution around the Sun in about 88 Earth days. Its orbit is highly eccentric, varying between 46 million km (perihelion) and 70 million km (aphelion) from the Sun',
         Natural_satellites:' None',
         Magnetic_field: 'Mercury has a very weak magnetic field, about 1% as strong as Earth'```
->>>>>>> 9b686730b78aa3281875ad5ea8a39b018a59e7bf
     },
     mars: {
         semiMajorAxis: 227.9,
@@ -142,6 +139,7 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(286.537),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(19.412),
         epoch: 2451545.0,
+        sizeOf: '10',
         link:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0ELDdWdnToVXeznMHPNmZPjB9-jKy1p68Q&s',
         name: ```'Mars',
         Size: 'Diameter of approximately 6,779 km, about half of Earth\s diameter', //2.1
@@ -204,6 +202,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(217.613),
         epoch: 2451545.0,
         link: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e0763947-6f42-4d09-944f-c2d6f41c415b/dcaift0-422ad564-f7b0-4291-914f-425b9ac29a35.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UwNzYzOTQ3LTZmNDItNGQwOS05NDRmLWMyZDZmNDFjNDE1YlwvZGNhaWZ0MC00MjJhZDU2NC1mN2IwLTQyOTEtOTE0Zi00MjViOWFjMjlhMzUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YYTxK1xSwJxGTBIMLHsgFWiwrdd0W6UqmXy7a5CCnnk',
+        sizeOf: '10',
         name: ```'Saturn',
         Size: 'Diameter of about 116,460 km, making Saturn the second-largest planet', //4.5
         Mass: 'About 5.68 x 10²⁶ kg, or 95 times Earth\s mass',
