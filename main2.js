@@ -1,6 +1,7 @@
 import {onDocumentMouseWheel, onDocumentMouseDown} from './js/io.js';
 import {createPlanet, createAllPlanets, orbitalElements} from './js/planets.js';
 import {updateOrbit} from './js/orbits.js';
+import { showPlanetInfo } from './js/hud.js';
 
 export const scene = new THREE.Scene();
 export const camera = new THREE.PerspectiveCamera(45, (window.innerWidth/100*85) / (window.innerHeight-4), 0.1, 3000);
@@ -171,3 +172,5 @@ window.addEventListener('resize', () => {
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
 });
+
+showPlanetInfo(planets[0])
