@@ -1,8 +1,12 @@
 import {showPlanetInfo, hidePlanetInfo} from './hud.js';
 import {camera, originalCameraPosition} from '../main2.js'
 
+var stopCamera = false;
+
 // Função para centralizar a câmera no planeta clicado
 export function centerOnPlanet(planet) {
+
+    stopCamera = false;
 
     const targetPosition = new THREE.Vector3(planet.position.x, planet.position.y, planet.position.z);
     const offset = 10 * planet.geometry.parameters.radius; // Adiciona um offset baseado no tamanho do planeta
@@ -20,8 +24,10 @@ export function centerOnPlanet(planet) {
         if (t < 1) {
             requestAnimationFrame(animate);
         } else {
+            if (!stopCamera){
             showPlanetInfo(planet);
-            centerOnPlanet(planet)
+                centerOnPlanet(planet)
+            }
             return true;
         }
     }
@@ -56,10 +62,10 @@ export function resetCameraPosition() {
 
 // Função para resetar a posição da câmera
 function resetCameraToOriginalPosition() {
+    stopCamera = true;
     const duration = 1;  // duração da animação
     const startPosition = camera.position.clone();
     const startTime = performance.now();
-    hidePlanetInfo();
 
     function animate() {
         const elapsed = (performance.now() - startTime) / 1000;
@@ -81,6 +87,7 @@ function resetCameraToOriginalPosition() {
     }
 
     requestAnimationFrame(animate);
+    hidePlanetInfo();
 }
 
 // Adiciona o evento de clique ao botão de reset
