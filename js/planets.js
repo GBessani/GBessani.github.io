@@ -23,7 +23,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(358.617),  // Graus convertidos em radianos
         epoch: 2451545.0, // Tempo juliano
         link: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_atmos_2048.jpg',
-        sizeOf: 3.9,
+        sizeOf: 10, //3.9
         name: 'Terra',
         distance: '150 milhões de km'
     },
@@ -37,7 +37,7 @@ export const orbitalElements = {
         epoch: 2451545.0, // Tempo juliano
         link: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/moon_1024.jpg',
         name: 'Lua',
-        sizeOf: '1',
+        sizeOf: '10',
         distance: '384 mil km',
     },
     venus: {
@@ -50,7 +50,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg',
         name: 'Vênus',
-        sizeOf: '3.7',
+        sizeOf: '10', //3.7
         distance: '108 milhões de km'
     },
     mercury: {
@@ -63,7 +63,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHHhttyRZnbpliW8ftwD7BQUZs6aTPmI7eQ&s',
         name: 'Mercúrio',
-        sizeOf: '1.5',
+        sizeOf: '10', //1.5
         distance: '58 milhões de km'
     },
     mars: {
@@ -76,7 +76,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0ELDdWdnToVXeznMHPNmZPjB9-jKy1p68Q&s',
         name: 'Marte',
-        sizeOf: '2.1',
+        sizeOf: '10', //2.1
         distance: '228 milhões de km'
     },
     phobos: {
@@ -89,7 +89,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link: 'https://cdn.pixabay.com/photo/2022/06/30/02/16/mercury-7292788_1280.jpg',
         name: 'Mercúrio',
-        sizeOf: '1.5',
+        sizeOf: '10', //1.5
         distance: '58 milhões de km'
     },
     deimos: {
@@ -102,7 +102,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link:'https://lh4.googleusercontent.com/proxy/_J0h01q8yY5_bB1jm52HTUYUgqKvM-O0XT86aVczsQLGApv0_pzwy_Y7R-SMro96-2CXcZuC0XjGtcJbX7E1EGcKqW0p4C86jwaFCaMRUPSObfljziHw',
         name: 'Deimos',
-        sizeOf: '0.004',
+        sizeOf: '10', //0.004
         distance: '23,5 mil km'
     },
     saturn: {
@@ -115,7 +115,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e0763947-6f42-4d09-944f-c2d6f41c415b/dcaift0-422ad564-f7b0-4291-914f-425b9ac29a35.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UwNzYzOTQ3LTZmNDItNGQwOS05NDRmLWMyZDZmNDFjNDE1YlwvZGNhaWZ0MC00MjJhZDU2NC1mN2IwLTQyOTEtOTE0Zi00MjViOWFjMjlhMzUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YYTxK1xSwJxGTBIMLHsgFWiwrdd0W6UqmXy7a5CCnnk',
         name: 'Saturno',
-        sizeOf: '4.5',
+        sizeOf: '10', //4.5
         distance: '1.2 bilhões de km'
     }
 

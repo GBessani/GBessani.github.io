@@ -156,10 +156,10 @@ function onMouseMove(event) {
     camera.updateProjectionMatrix();
 }
 
-// Adiciona os eventos do mouse
-window.addEventListener('mousedown', onMouseDown, false);
-window.addEventListener('mouseup', onMouseUp, false);
-window.addEventListener('mousemove', onMouseMove, false);
+// // Adiciona os eventos do mouse
+// window.addEventListener('mousedown', onMouseDown, false);
+// window.addEventListener('mouseup', onMouseUp, false);
+// window.addEventListener('mousemove', onMouseMove, false);
 
 animate();
 
