@@ -39,7 +39,7 @@ sunLight.shadow.camera.far = 1500;
 scene.add(sunLight);
 
 // Ajuste da posição inicial da câmera
-camera.position.set(0, 200, 500); // Afastando a câmera para que o sistema solar caiba
+camera.position.set(0, 80, 700); // Afastando a câmera para que o sistema solar caiba
 camera.lookAt(0, 0, 0);
 
 // Variáveis de controle
