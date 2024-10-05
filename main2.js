@@ -84,7 +84,7 @@ const mercuryRotationSpeed = 0.0002;
 const marsRotationSpeed = 0.008;
 const saturnRotationSpeed = 0.005;
 
-window.addEventListener('mousedown', onDocumentMouseDown, false);
+// window.addEventListener('mousedown', onDocumentMouseDown, false);
 
 // Animação
 function animate() {
@@ -112,7 +112,7 @@ function animate() {
 }
 
 // Adiciona o evento de rolagem do mouse para controlar o zoom
-window.addEventListener('wheel', onDocumentMouseWheel, false);
+// window.addEventListener('wheel', onDocumentMouseWheel, false);
 
 // Variáveis para controle do movimento da câmera com o mouse
 let isMouseDown = false;
