@@ -2,6 +2,7 @@ import {onDocumentMouseWheel, onDocumentMouseDown} from './js/io.js';
 import {createPlanet, createAllPlanets, orbitalElements} from './js/planets.js';
 import {updateOrbit} from './js/orbits.js';
 import { showPlanetInfo } from './js/hud.js';
+import { centerOnPlanet } from './js/camera.js';
 
 export const scene = new THREE.Scene();
 export const camera = new THREE.PerspectiveCamera(45, (window.innerWidth/100*85) / (window.innerHeight-4), 0.1, 3000);
@@ -12,6 +13,12 @@ renderer.shadowMap.enabled = false; // Habilitar sombras
 document.getElementById('earth-container').appendChild(renderer.domElement);
 
 
+let valor = document.getElementById("nome-do-planeta");
+export function procurar(){
+            
+    console.log("funcionou")
+    centerOnPlanet(planets[valor])
+}
 
 
 // Carregador de texturas
@@ -40,7 +47,7 @@ sunLight.shadow.camera.far = 1500;
 scene.add(sunLight);
 
 // Ajuste da posição inicial da câmera
-camera.position.set(0, 80, 700); // Afastando a câmera para que o sistema solar caiba
+camera.position.set(0, 0, 700); // Afastando a câmera para que o sistema solar caiba
 camera.lookAt(0, 0, 0);
 
 // Variáveis de controle
@@ -75,14 +82,17 @@ let moonOrbit = { radius: 10, speed: orbitalSpeeds.moon, angle: 0 };
 let venusOrbit = { radius: 108, speed: orbitalSpeeds.venus, angle: 0 };
 let mercuryOrbit = { radius: 58, speed: orbitalSpeeds.mercury, angle: 0 };
 let marsOrbit = { radius: 228, speed: orbitalSpeeds.mars, angle: 0 };
-let saturnOrbit = { radius: 450, speed: orbitalSpeeds.saturn, angle: 0 };
+let jupiterOrbit = { radius: 450, speed: orbitalSpeeds.saturn, angle: 0 };
+let saturnOrbit = { radius: 600, speed: orbitalSpeeds.saturn, angle: 0 };
 
 // Velocidades de rotação mais realistas (em radianos por quadro)
+
+const mercuryRotationSpeed = 0.0002;
+const venusRotationSpeed = 0.0004;
 const earthRotationSpeed = 0.01;
 const moonRotationSpeed = 0.001;
-const venusRotationSpeed = 0.0004;
-const mercuryRotationSpeed = 0.0002;
 const marsRotationSpeed = 0.008;
+const jupiterRotationSpeed = 0.003
 const saturnRotationSpeed = 0.005;
 
 // window.addEventListener('mousedown', onDocumentMouseDown, false);
@@ -91,20 +101,22 @@ const saturnRotationSpeed = 0.005;
 function animate() {
     if (!isPaused) {
         // Movimentação orbital
-        earthOrbit.angle = updateOrbit(planets[0], earthOrbit.radius, earthOrbit.speed, earthOrbit.angle, isPaused);
-        moonOrbit.angle = updateOrbit(planets[1], moonOrbit.radius, moonOrbit.speed, moonOrbit.angle, isPaused);
-        venusOrbit.angle = updateOrbit(planets[2], venusOrbit.radius, venusOrbit.speed, venusOrbit.angle, isPaused);
-        mercuryOrbit.angle = updateOrbit(planets[3], mercuryOrbit.radius, mercuryOrbit.speed, mercuryOrbit.angle, isPaused);
+        earthOrbit.angle = updateOrbit(planets[2], earthOrbit.radius, earthOrbit.speed, earthOrbit.angle, isPaused);
+        moonOrbit.angle = updateOrbit(planets[3], moonOrbit.radius, moonOrbit.speed, moonOrbit.angle, isPaused);
+        venusOrbit.angle = updateOrbit(planets[1], venusOrbit.radius, venusOrbit.speed, venusOrbit.angle, isPaused);
+        mercuryOrbit.angle = updateOrbit(planets[0], mercuryOrbit.radius, mercuryOrbit.speed, mercuryOrbit.angle, isPaused);
         marsOrbit.angle = updateOrbit(planets[4], marsOrbit.radius, marsOrbit.speed, marsOrbit.angle, isPaused);
-        saturnOrbit.angle = updateOrbit(planets[5], saturnOrbit.radius, saturnOrbit.speed, saturnOrbit.angle, isPaused);
+        jupiterOrbit.angle = updateOrbit(planets[5], marsOrbit.radius, marsOrbit.speed, marsOrbit.angle, isPaused);
+        saturnOrbit.angle = updateOrbit(planets[6], saturnOrbit.radius, saturnOrbit.speed, saturnOrbit.angle, isPaused);
 
         // Rotação dos planetas
-        planets[0].rotation.y += earthRotationSpeed;
-        planets[1].rotation.y += moonRotationSpeed;
-        planets[2].rotation.y += venusRotationSpeed;
-        planets[3].rotation.y += mercuryRotationSpeed;
+        planets[0].rotation.y += mercuryRotationSpeed;
+        planets[1].rotation.y += venusRotationSpeed;
+        planets[2].rotation.y += earthRotationSpeed;
+        planets[3].rotation.y += moonRotationSpeed;
         planets[4].rotation.y += marsRotationSpeed;
-        planets[5].rotation.y += saturnRotationSpeed;
+        planets[5].rotation.y += jupiterRotationSpeed;
+        planets[6].rotation.y += saturnRotationSpeed;
     }
 
     // Renderização
@@ -173,4 +185,6 @@ window.addEventListener('resize', () => {
     camera.updateProjectionMatrix();
 });
 
-showPlanetInfo(planets[0])
+
+
+

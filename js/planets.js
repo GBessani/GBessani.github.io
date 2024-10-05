@@ -14,6 +14,32 @@ export function createPlanet(size, textureUrl, emissive = 0x000000, tl) {
 }
 
 export const orbitalElements = {
+    mercury: {
+        semiMajorAxis: 57.91,
+        eccentricity: 0.2056,
+        inclination: THREE.MathUtils.degToRad(7.005),
+        longitudeOfAscendingNode: THREE.MathUtils.degToRad(48.331),
+        argumentOfPeriapsis: THREE.MathUtils.degToRad(29.124),
+        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(174.796),
+        epoch: 2451545.0,
+        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHHhttyRZnbpliW8ftwD7BQUZs6aTPmI7eQ&s',
+        name: 'Mercúrio',
+        sizeOf: '10', //1.5
+        distance: '58 milhões de km'
+    },
+    venus: {
+        semiMajorAxis: 108.2,
+        eccentricity: 0.0067,
+        inclination: THREE.MathUtils.degToRad(3.39),
+        longitudeOfAscendingNode: THREE.MathUtils.degToRad(76.680),
+        argumentOfPeriapsis: THREE.MathUtils.degToRad(131.532),
+        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(50.115),
+        epoch: 2451545.0,
+        link: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg',
+        name: 'Vênus',
+        sizeOf: '10', //3.7
+        distance: '108 milhões de km'
+    },
     earth: {
         semiMajorAxis: 149.6,  // Unidade: milhões de km
         eccentricity: 0.0167,
@@ -40,32 +66,7 @@ export const orbitalElements = {
         sizeOf: '10',
         distance: '384 mil km',
     },
-    venus: {
-        semiMajorAxis: 108.2,
-        eccentricity: 0.0067,
-        inclination: THREE.MathUtils.degToRad(3.39),
-        longitudeOfAscendingNode: THREE.MathUtils.degToRad(76.680),
-        argumentOfPeriapsis: THREE.MathUtils.degToRad(131.532),
-        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(50.115),
-        epoch: 2451545.0,
-        link: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg',
-        name: 'Vênus',
-        sizeOf: '10', //3.7
-        distance: '108 milhões de km'
-    },
-    mercury: {
-        semiMajorAxis: 57.91,
-        eccentricity: 0.2056,
-        inclination: THREE.MathUtils.degToRad(7.005),
-        longitudeOfAscendingNode: THREE.MathUtils.degToRad(48.331),
-        argumentOfPeriapsis: THREE.MathUtils.degToRad(29.124),
-        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(174.796),
-        epoch: 2451545.0,
-        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHHhttyRZnbpliW8ftwD7BQUZs6aTPmI7eQ&s',
-        name: 'Mercúrio',
-        sizeOf: '10', //1.5
-        distance: '58 milhões de km'
-    },
+    
     mars: {
         semiMajorAxis: 227.9,
         eccentricity: 0.0934,
@@ -88,7 +89,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(236.0),
         epoch: 2451545.0,
         link: 'https://cdn.pixabay.com/photo/2022/06/30/02/16/mercury-7292788_1280.jpg',
-        name: 'Mercúrio',
+        name: 'Phobos',
         sizeOf: '10', //1.5
         distance: '58 milhões de km'
     },
@@ -105,8 +106,23 @@ export const orbitalElements = {
         sizeOf: '10', //0.004
         distance: '23,5 mil km'
     },
-    saturn: {
+    
+    jupter: {
         semiMajorAxis: 1430,
+        eccentricity: 0.0565,
+        inclination: THREE.MathUtils.degToRad(2.485),
+        longitudeOfAscendingNode: THREE.MathUtils.degToRad(113.665),
+        argumentOfPeriapsis: THREE.MathUtils.degToRad(336.313),
+        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(217.613),
+        epoch: 2451545.0,
+        link: 'https://www.reddit.com/media?url=https%3A%2F%2Fexternal-preview.redd.it%2FJJTceYLFNKh1trdhGTiDAku5dMw24H61e8xyi2_TS6g.jpg%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3D32e8236f46b72a2941c1f5a3fa0c1f2f7bd03ff7',
+        name: 'Jupter',
+        sizeOf: '10', //4.5
+        distance: '1.2 bilhões de km'
+    },
+
+    saturn: {
+        semiMajorAxis: 2000,
         eccentricity: 0.0565,
         inclination: THREE.MathUtils.degToRad(2.485),
         longitudeOfAscendingNode: THREE.MathUtils.degToRad(113.665),
@@ -123,6 +139,7 @@ export const orbitalElements = {
 
 export function createAllPlanets(textureLoader, scene) {
     var planets = [];
+    var num  = 0;
     for (const planetName in orbitalElements) {
         const planet = createPlanet(orbitalElements[planetName].sizeOf, orbitalElements[planetName].link, 0x000000,textureLoader);
         planet.name = orbitalElements[planetName].name;
@@ -130,6 +147,9 @@ export function createAllPlanets(textureLoader, scene) {
         planet.distance = orbitalElements[planetName].distance;
         planets.push(planet);
         scene.add(planet);
+        let NomeParaAdicionar = document.getElementById("nome-do-planeta");
+        NomeParaAdicionar.innerHTML = NomeParaAdicionar.innerHTML + `<option value="${num}">${planet.name}</option>`;
+        num++;
     }
     return planets;
 }

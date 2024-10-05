@@ -29,6 +29,20 @@ body{
   height: 100vh;
 } 
 
+.select-Planet-btn {
+  position: absolute;
+  top: 11%;
+  left: 3%;
+  z-index: 10;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
 /* Estilo para o botão de reset */
 #reset-camera-btn {
