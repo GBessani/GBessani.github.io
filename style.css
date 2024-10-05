@@ -8,8 +8,14 @@ body{
 }
 
 .input{
-
-  
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
 
 .flex-container{
