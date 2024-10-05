@@ -26,8 +26,8 @@ function calculateOrbitalPosition(orbitalElements, time) {
     return new THREE.Vector3(x, y, z);
 }
 
-export function updateOrbit(object, radius, speed, angle, isPaused) {
-    if (isPaused) return angle; // Congela a órbita se estiver pausado
+export function updateOrbit(object, radius, speed, angle) {
+    
     angle += speed;
     object.position.x = Math.cos(angle) * radius;
     object.position.z = Math.sin(angle) * radius;
