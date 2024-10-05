@@ -12,15 +12,6 @@ renderer.setSize(window.innerWidth/100*85, window.innerHeight-4);
 renderer.shadowMap.enabled = false; // Habilitar sombras
 document.getElementById('earth-container').appendChild(renderer.domElement);
 
-
-let valor = document.getElementById("nome-do-planeta");
-export function procurar(){
-            
-    console.log("funcionou")
-    centerOnPlanet(planets[valor])
-}
-
-
 // Carregador de texturas
 const textureLoader = new THREE.TextureLoader();
 
@@ -185,6 +176,10 @@ window.addEventListener('resize', () => {
     camera.updateProjectionMatrix();
 });
 
+export function procurar(){
+    let valor = document.getElementById("nome-do-planeta").value;
+    console.log("funcionou")
+    centerOnPlanet(planets[valor])
+}
 
-
-
+document.getElementById("nome-do-planeta").addEventListener("change", procurar);
