@@ -1,7 +1,3 @@
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 // Função para exibir informações do planeta com animação
 export function showPlanetInfo(planet) {
     const infoBox = document.getElementById('info-box');
@@ -14,7 +10,6 @@ export function showPlanetInfo(planet) {
 
 // Função para ocultar a caixa de informações
 export function hidePlanetInfo() {
-    sleep(3000)
     const infoBox = document.getElementById('info-box');
     infoBox.classList.remove('active'); // Remove a classe active para ocultar
 }
