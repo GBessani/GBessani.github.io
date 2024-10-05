@@ -7,9 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="earth-container"></div>
-    <div id="info-panel"></div>
 
+  <div class="flex-container">
+    
+    <div class="caixa-lateral">
+        <input class="input">
+        <button id="reset-camera-btn">Reset Camera</button> 
+    </div>
+    <div>
+        <div id="earth-container"></div>
+        <div id="info-panel"></div>
+    </div>
+    
+  </div>
     <!-- Caixa de informações do planeta -->
     <div id="info-box">
         <h2 id="planet-name"></h2>
@@ -17,10 +27,10 @@
         <p id="planet-distance"></p>
     </div>
 
-    <button id="reset-camera-btn">Reset Camera</button>
+    
 
     <script src="https://threejs.org/build/three.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script type="module" src="main2.js"></script>
+    <!-- <script type="module" src="main2.js"></script> -->
 </body>
 </html>
