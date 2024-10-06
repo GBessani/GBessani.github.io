@@ -187,6 +187,53 @@ export const orbitalElements = {
         
         description:`Saturn, the second-largest planet in the solar system, has a diameter of about 116,460 km and a mass 95 times that of Earth. It orbits the Sun at a distance of approximately 1.43 billion km, taking 29.5 Earth years to complete one orbit. Composed mainly of hydrogen (96%) and helium (3%), Saturn lacks a solid surface. Its atmosphere features cloud bands, and it is renowned for its iconic ring system made of ice and rock. Saturn has 83 known moons, including Titan, larger than Mercury, and Enceladus, with subsurface oceans indicated by icy geysers.`
 
+    },
+    urano: {
+        semiMajorAxis: 2870,
+        eccentricity: 0.0457,
+        inclination: THREE.MathUtils.degToRad(0.772),
+        longitudeOfAscendingNode: THREE.MathUtils.degToRad(74.229),
+        argumentOfPeriapsis: THREE.MathUtils.degToRad(96.541),
+        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(142.238),
+        epoch: 2451545.0,
+        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1YV8717y2fhv0VOsDmEmFzKS7qGviXG3PQ&s',
+        name: 'Urano',
+        sizeOf: '10',
+        distance: '2.87 bilhões de quilometros',
+        descricao:`Urano, o sétimo planeta do sistema solar, tem um diâmetro de cerca de 50.724 km e uma massa 14,5 vezes maior que a da Terra. Ele orbita o Sol a uma distância de aproximadamente 2,87 bilhões de km, levando 84 anos terrestres para completar uma órbita. Composto principalmente de gelo de água, amônia e metano, Urano tem uma atmosfera de hidrogênio e hélio. Ele é conhecido por seu eixo de rotação inclinado, que o faz girar de lado. Urano tem 27 luas conhecidas, incluindo Miranda, com falésias de 20
+        km de altura, e Titânia, a maior lua do planeta.`,
+        description:`Uranus, the seventh planet in the solar system, has a diameter of about 50,724 km and a mass 14.5 times that of Earth. It orbits the Sun at a distance of approximately 2.87 billion km, taking 84 Earth years to complete one orbit. Composed mainly of water ice, ammonia, and methane, Uranus has an atmosphere of hydrogen and helium. It is known for its inclined rotation axis, causing it to spin on its side. Uranus has 27 known moons, including Miranda, with 20 km-high cliffs, and Titania, the planet's largest moon.`
+    },
+    netuno: {
+        semiMajorAxis: 4495,
+        eccentricity: 0.0113,
+        inclination: THREE.MathUtils.degToRad(1.769),
+        longitudeOfAscendingNode: THREE.MathUtils.degToRad(131.721),
+        argumentOfPeriapsis: THREE.MathUtils.degToRad(272.846),
+        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(256.228),
+        epoch: 2451545.0,
+        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1YV8717y2fhv0VOsDmEmFzKS7qGviXG3PQ&s',
+        name: 'Netuno',
+        sizeOf: '10',
+        distance: '4.495 bilhões de quilometros',
+        descricao:`Netuno, o oitavo planeta do sistema solar, tem um diâmetro de cerca de 49.244 km e uma massa 17 vezes maior que a da Terra. Ele orbita o Sol a uma distância de aproximadamente 4,495 bilhões de km, levando 165 anos terrestres para completar uma órbita. Composto principalmente de gelo de água, amônia e metano, Netuno tem uma atmosfera de hidrogênio e hélio. Ele é conhec
+        ido por suas tempestades, incluindo a Grande Mancha Escura, e por sua lua Tritão, que orbita em sentido contrário à rotação do planeta.`,
+        description:`Neptune, the eighth planet in the solar system, has a diameter of about 49,244 km and a mass 17 times that of Earth. It orbits the Sun at a distance of approximately 4.495 billion km, taking 165 Earth years to complete one orbit. Composed mainly of water ice, ammonia, and methane, Neptune has an atmosphere of hydrogen and helium. It is known for its storms, including the Great Dark Spot, and for its moon Triton, which orbits in the opposite direction of the planet's rotation.`
+    },
+    pluto: {
+        semiMajorAxis: 5906,
+        eccentricity: 0.2488,
+        inclination: THREE.MathUtils.degToRad(17.16),
+        longitudeOfAscendingNode: THREE.MathUtils.degToRad(110.299),
+        argumentOfPeriapsis: THREE.MathUtils.degToRad(113.834),
+        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(14.53),
+        epoch: 2451545.0,
+        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1YV8717y2fhv0VOsDmEmFzKS7qGviXG3PQ&s',
+        name: 'Plutão',
+        sizeOf: '10',
+        distance: '5.906 bilhões de quilometros',
+        descricao:`Plutão, um planeta anão no sistema solar, tem um diâmetro de cerca de 2.377 km e uma massa 0,0022 vezes a da Terra. Ele orbita o Sol a uma distância de aproximadamente 5,906 bilhões de km, levando 248 anos terrestres para completar uma órbita. Composto principalmente de gelo de água, metano e nitrogênio, Plutão tem uma atmosfera de nitrogênio, metano e monóxido de carbono. Ele é conhecido por sua lua Caronte, que é quase do mesmo tamanho que Plutão e orbita em um sistema binário com ele.`,
+        description:`Pluto, a dwarf planet in the solar system, has a diameter of about 2,377 km and a mass 0.0022 times that of Earth. It orbits the Sun at a distance of approximately 5.906 billion km, taking 248 Earth years to complete one orbit. Composed mainly of water ice, methane, and nitrogen, Pluto has an atmosphere of nitrogen, methane, and carbon monoxide. It is known for its moon Charon, which is nearly the same size as Pluto and orbits in a binary system with it.`
     }
 
 };
