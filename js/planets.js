@@ -110,7 +110,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link: 'https://lh4.googleusercontent.com/proxy/_J0h01q8yY5_bB1jm52HTUYUgqKvM-O0XT86aVczsQLGApv0_pzwy_Y7R-SMro96-2CXcZuC0XjGtcJbX7E1EGcKqW0p4C86jwaFCaMRUPSObfljziHw',
         name: 'Phobos',
-        sizeOf: '2', //1.5
+        sizeOf: '0.5', //1.5
         distance: '58 milhões de quilometros'
         
     },
@@ -124,7 +124,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link:'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5938ae9e-47de-424a-8836-f98e6658d37b/dczaq88-d97d6ecd-a233-48a8-b1bc-74fd3327f95c.png/v1/fill/w_1264,h_632,q_70,strp/deimos_texture_map_by_askaniy_dczaq88-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjA0OCIsInBhdGgiOiJcL2ZcLzU5MzhhZTllLTQ3ZGUtNDI0YS04ODM2LWY5OGU2NjU4ZDM3YlwvZGN6YXE4OC1kOTdkNmVjZC1hMjMzLTQ4YTgtYjFiYy03NGZkMzMyN2Y5NWMucG5nIiwid2lkdGgiOiI8PTQwOTYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.hNuoyXLVNFXX4E21fnZN6hAhDAW1VPNBsNdDzYwmGhk',
         name: 'Deimos',
-        sizeOf: '2', //0.004
+        sizeOf: '0.4', //0.004
         distance: '23,5 mil km'
     },
     
