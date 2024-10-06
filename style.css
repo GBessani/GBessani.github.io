@@ -6,7 +6,27 @@ body{
 #earth-container{
   border: darkblue solid 2px;
 }
-
+.tempo{
+  position: absolute;
+  bottom: 15%;
+  left: 3%;
+  width: 12vh;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.tempo2{
+  position: absolute;
+  bottom: 20%;
+  left: 2.5%;
+  width: 15vh;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
 .input{
   position: absolute;
   top: 5%;

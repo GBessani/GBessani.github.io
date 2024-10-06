@@ -167,7 +167,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1YV8717y2fhv0VOsDmEmFzKS7qGviXG3PQ&s',
         name: 'Jupter',
-        sizeOf: '10', //4.5
+        sizeOf: '45', 
         distance: '1.2 bilhões de quilometros'
     },
 
@@ -180,7 +180,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(217.613),
         epoch: 2451545.0,
         link: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e0763947-6f42-4d09-944f-c2d6f41c415b/dcaift0-422ad564-f7b0-4291-914f-425b9ac29a35.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UwNzYzOTQ3LTZmNDItNGQwOS05NDRmLWMyZDZmNDFjNDE1YlwvZGNhaWZ0MC00MjJhZDU2NC1mN2IwLTQyOTEtOTE0Zi00MjViOWFjMjlhMzUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YYTxK1xSwJxGTBIMLHsgFWiwrdd0W6UqmXy7a5CCnnk',
-        sizeOf: '10',
+        sizeOf: '39',
         name: 'Saturno',
         distance: '1.43 bilhões de quilometros',
         descricao: `Saturno, o segundo maior planeta do sistema solar, tem um diâmetro de cerca de 116.460 km e uma massa 95 vezes maior que a da Terra. Ele orbita o Sol a uma distância de aproximadamente 1,43 bilhões de km, levando 29,5 anos terrestres para completar uma órbita. Composto principalmente de hidrogênio (96%) e hélio (3%), Saturno não possui uma superfície sólida. Sua atmosfera apresenta faixas de nuvens, e ele é famoso por seu icônico sistema de anéis feitos de gelo e rocha. Saturno tem 83 luas conhecidas, incluindo Titã, maior que Mercúrio, e Encélado, com oceanos subterrâneos indicados por gêiseres de gelo.`,
@@ -196,9 +196,9 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(96.541),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(142.238),
         epoch: 2451545.0,
-        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1YV8717y2fhv0VOsDmEmFzKS7qGviXG3PQ&s',
+        link: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Solarsystemscope_texture_2k_uranus.jpg',
         name: 'Urano',
-        sizeOf: '10',
+        sizeOf: '16',
         distance: '2.87 bilhões de quilometros',
         descricao:`Urano, o sétimo planeta do sistema solar, tem um diâmetro de cerca de 50.724 km e uma massa 14,5 vezes maior que a da Terra. Ele orbita o Sol a uma distância de aproximadamente 2,87 bilhões de km, levando 84 anos terrestres para completar uma órbita. Composto principalmente de gelo de água, amônia e metano, Urano tem uma atmosfera de hidrogênio e hélio. Ele é conhecido por seu eixo de rotação inclinado, que o faz girar de lado. Urano tem 27 luas conhecidas, incluindo Miranda, com falésias de 20
         km de altura, e Titânia, a maior lua do planeta.`,
@@ -212,9 +212,9 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(272.846),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(256.228),
         epoch: 2451545.0,
-        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1YV8717y2fhv0VOsDmEmFzKS7qGviXG3PQ&s',
+        link: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3dbe3745-0eb8-4e98-aac3-197221ef117e/dc28qg7-205f3f54-cc0d-44cf-9b1f-b70183f553ba.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNkYmUzNzQ1LTBlYjgtNGU5OC1hYWMzLTE5NzIyMWVmMTE3ZVwvZGMyOHFnNy0yMDVmM2Y1NC1jYzBkLTQ0Y2YtOWIxZi1iNzAxODNmNTUzYmEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.b26fzftjNAlpM5G2sgSR1Ycmov1xfSpi-87Z6KKKTOw',
         name: 'Netuno',
-        sizeOf: '10',
+        sizeOf: '15.9',
         distance: '4.495 bilhões de quilometros',
         descricao:`Netuno, o oitavo planeta do sistema solar, tem um diâmetro de cerca de 49.244 km e uma massa 17 vezes maior que a da Terra. Ele orbita o Sol a uma distância de aproximadamente 4,495 bilhões de km, levando 165 anos terrestres para completar uma órbita. Composto principalmente de gelo de água, amônia e metano, Netuno tem uma atmosfera de hidrogênio e hélio. Ele é conhec
         ido por suas tempestades, incluindo a Grande Mancha Escura, e por sua lua Tritão, que orbita em sentido contrário à rotação do planeta.`,
@@ -228,9 +228,9 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(113.834),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(14.53),
         epoch: 2451545.0,
-        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1YV8717y2fhv0VOsDmEmFzKS7qGviXG3PQ&s',
+        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDRMGpu-SpayOOQYlcr3R1b3U46vBbIx6HDQ&s',
         name: 'Plutão',
-        sizeOf: '10',
+        sizeOf: '1.35',
         distance: '5.906 bilhões de quilometros',
         descricao:`Plutão, um planeta anão no sistema solar, tem um diâmetro de cerca de 2.377 km e uma massa 0,0022 vezes a da Terra. Ele orbita o Sol a uma distância de aproximadamente 5,906 bilhões de km, levando 248 anos terrestres para completar uma órbita. Composto principalmente de gelo de água, metano e nitrogênio, Plutão tem uma atmosfera de nitrogênio, metano e monóxido de carbono. Ele é conhecido por sua lua Caronte, que é quase do mesmo tamanho que Plutão e orbita em um sistema binário com ele.`,
         description:`Pluto, a dwarf planet in the solar system, has a diameter of about 2,377 km and a mass 0.0022 times that of Earth. It orbits the Sun at a distance of approximately 5.906 billion km, taking 248 Earth years to complete one orbit. Composed mainly of water ice, methane, and nitrogen, Pluto has an atmosphere of nitrogen, methane, and carbon monoxide. It is known for its moon Charon, which is nearly the same size as Pluto and orbits in a binary system with it.`

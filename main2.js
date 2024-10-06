@@ -18,7 +18,7 @@ const textureLoader = new THREE.TextureLoader();
 
 
 // Criação do Sol com brilho emissivo
-const sun = createPlanet(30, 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Map_of_the_full_sun.jpg/1280px-Map_of_the_full_sun.jpg', 0xffdd00, textureLoader);
+const sun = createPlanet(80, 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Map_of_the_full_sun.jpg/1280px-Map_of_the_full_sun.jpg', 0xffdd00, textureLoader);
 sun.castShadow = false; // O Sol não projeta sombra
 scene.add(sun);
 
@@ -57,7 +57,12 @@ const orbitalPeriods = {
     mars: 687,
     phobos: 12.5,
     deimos: 30.3,
-    saturn: 10759 // Saturno: 29.5 anos terrestres
+    jupiter: 4331.572,
+    saturn: 10759,
+    uranus: 30799.095,
+    neptune: 60190,
+    pluto: 90613.305
+
 };
 
 // Conversão dos períodos orbitais em velocidades de translação
@@ -69,22 +74,27 @@ const orbitalSpeeds = {
     mars: 1 / orbitalPeriods.mars,
     phobos: 1 / orbitalPeriods.phobos,
     deimos: 1 / orbitalPeriods.deimos,
-    saturn: 1 / orbitalPeriods.saturn
+    jupiter: 1 / orbitalPeriods.jupiter,
+    saturn: 1 / orbitalPeriods.saturn,
+    uranus: 1 / orbitalPeriods.uranus,
+    neptune: 1 / orbitalPeriods.neptune,
+    pluto: 1 / orbitalPeriods.pluto,
+
 };
 
 // Variáveis de órbita e ângulos para os planetas
-let earthOrbit = { radius: 150, speed: orbitalSpeeds.earth, angle: 0 };
+let earthOrbit = { radius: 200, speed: orbitalSpeeds.earth, angle: 0 };
 let moonOrbit = { radius: 30, speed: orbitalSpeeds.moon, angle: 0 };
-let venusOrbit = { radius: 108, speed: orbitalSpeeds.venus, angle: 0 };
+let venusOrbit = { radius: 138, speed: orbitalSpeeds.venus, angle: 0 };
 let mercuryOrbit = { radius: 58, speed: orbitalSpeeds.mercury, angle: 0 };
-let marsOrbit = { radius: 228, speed: orbitalSpeeds.mars, angle: 0 };
+let marsOrbit = { radius: 290, speed: orbitalSpeeds.mars, angle: 0 };
 let phobosOrbit = { radius: 7, speed: orbitalSpeeds.phobos, angle: 0 };
 let deimosOrbit = { radius: 5, speed: orbitalSpeeds.deimos, angle: 90 };
-let jupiterOrbit = { radius: 450, speed: orbitalSpeeds.saturn, angle: 0 };
-let saturnOrbit = { radius: 600, speed: orbitalSpeeds.saturn, angle: 0 };
-let uranusOrbit = { radius: 700, speed: orbitalSpeeds.saturn, angle: 0 };
-let neptuneOrbit = { radius: 800, speed: orbitalSpeeds.saturn, angle: 0 };
-let plutoOrbit = { radius: 850, speed: orbitalSpeeds.saturn, angle: 0 };
+let jupiterOrbit = { radius: 600, speed: orbitalSpeeds.jupiter, angle: 0 };
+let saturnOrbit = { radius: 800, speed: orbitalSpeeds.saturn, angle: 0 };
+let uranusOrbit = { radius: 900, speed: orbitalSpeeds.uranus, angle: 0 };
+let neptuneOrbit = { radius: 1000, speed: orbitalSpeeds.neptune, angle: 0 };
+let plutoOrbit = { radius: 1100, speed: orbitalSpeeds.pluto, angle: 0 };
 
 // Velocidades de rotação mais realistas (em radianos por quadro)
 
@@ -99,7 +109,7 @@ const jupiterRotationSpeed = 0.003;
 const saturnRotationSpeed = 0.005;
 const uranusRotationSpeed = 0.002;
 const neptuneRotationSpeed = 0.002;
-const plutoRotationSpeed = 0.001;
+const plutoRotationSpeed = 0.00637;
 
 
 // Animação
@@ -134,9 +144,12 @@ function animate() {
         plutoRotationSpeed
     ];
 
+    
+
     // Atualiza a movimentação orbital e rotação dos planetas em loop
     orbits.forEach(({ orbit, index }) => {
-        orbit.angle = updateOrbit(planets[index], orbit.radius, orbit.speed, orbit.angle);
+        let velo = document.getElementById('velocidade').value;
+        orbit.angle = updateOrbit(planets[index], orbit.radius, orbit.speed * velo, orbit.angle);
         planets[index].rotation.y += rotationSpeeds[index];
     });
 
