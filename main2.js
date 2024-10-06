@@ -51,7 +51,7 @@ let isPaused = false;
 
 const orbitalPeriods = {
     earth: 365,
-    moon: 273,
+    moon: 273.00,
     venus: 225,
     mercury: 88,
     mars: 687,
@@ -84,7 +84,7 @@ const orbitalSpeeds = {
 
 // Variáveis de órbita e ângulos para os planetas
 let earthOrbit = { radius: 200, speed: orbitalSpeeds.earth, angle: 0 };
-let moonOrbit = { radius: 30, speed: orbitalSpeeds.moon, angle: 0 };
+let moonOrbit = { radius: 35, speed: orbitalSpeeds.moon, angle: 0 };
 let venusOrbit = { radius: 138, speed: orbitalSpeeds.venus, angle: 0 };
 let mercuryOrbit = { radius: 90, speed: orbitalSpeeds.mercury, angle: 0 };
 let marsOrbit = { radius: 290, speed: orbitalSpeeds.mars, angle: 0 };

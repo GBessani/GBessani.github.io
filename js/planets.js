@@ -24,9 +24,9 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHHhttyRZnbpliW8ftwD7BQUZs6aTPmI7eQ&s',
         name: 'Mercury',
-        sizeOf: '10', //1.5
-        distance: '58 milhões de km',
-        descricao:`Mercúrio, o planeta mais próximo do Sol, tem um diâmetro de aproximadamente 4.880 km e uma massa de 3,3 x 10²³ kg. A distância mínima entre Mercúrio e a Terra é de cerca de 77 milhões de km. Composto principalmente de metais e silicatos, seu núcleo de ferro ocupa cerca de 75% do raio do planeta. Mercúrio não possui uma atmosfera densa, mas sim uma exosfera composta de oxigênio, sódio, hidrogênio, hélio e potássio, resultando em grandes variações de temperatura. Ele orbita o Sol em 88 dias terrestres.`,
+        sizeOf: '1.5', //1.5
+        distance: '58 millions of kilometers',
+        descricao:`Mercúrio, o planeta mais próximo do Sol, tem um diâmetro de aproximadamente 4.880 km e uma massa de 3,3 x 10²³ kg. A distância mínima entre Mercúrio e a Terra é de cerca de 77 millions of kilometers. Composto principalmente de metais e silicatos, seu núcleo de ferro ocupa cerca de 75% do raio do planeta. Mercúrio não possui uma atmosfera densa, mas sim uma exosfera composta de oxigênio, sódio, hidrogênio, hélio e potássio, resultando em grandes variações de temperatura. Ele orbita o Sol em 88 dias terrestres.`,
         
         description:`Mercury, the closest planet to the Sun, has a diameter of approximately 4,880 km and a mass of 3.3 x 10²³ kg. The minimum distance between Mercury and Earth is about 77 million km. Composed mainly of metals and silicates, its iron core occupies about 75% of the planet's radius. Mercury lacks a dense atmosphere, having instead an exosphere made of oxygen, sodium, hydrogen, helium, and potassium, leading to extreme temperature variations. It orbits the Sun in 88 Earth days.`
     },
@@ -40,14 +40,14 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg',
         name: 'Venus',
-        sizeOf: '10', //3.7
-        distance: '108 milhões de km',
-        descricao:`Vênus, frequentemente chamada de "planeta irmão da Terra", tem um diâmetro de aproximadamente 12.104 km, ligeiramente menor que a Terra. Com uma massa de cerca de 4,87 x 10²⁴ kg, é 82% da massa da Terra. Sua distância da Terra varia, mas pode chegar a cerca de 38 milhões de km. Vênus é composta principalmente de rochas e metais, com um núcleo metálico, manto de silicato e uma crosta fina. Conhecida por sua espessa atmosfera de dióxido de carbono, Vênus sofre um intenso efeito estufa, resultando em temperaturas de superfície em torno de 462°C. Ela leva 225 dias terrestres para orbitar o Sol e gira lentamente no sentido contrário.`,
+        sizeOf: '3.7', //3.7
+        distance: '108 millions of kilometers',
+        descricao:`Vênus, frequentemente chamada de "planeta irmão da Terra", tem um diâmetro de aproximadamente 12.104 km, ligeiramente menor que a Terra. Com uma massa de cerca de 4,87 x 10²⁴ kg, é 82% da massa da Terra. Sua distância da Terra varia, mas pode chegar a cerca de 38 millions of kilometers. Vênus é composta principalmente de rochas e metais, com um núcleo metálico, manto de silicato e uma crosta fina. Conhecida por sua espessa atmosfera de dióxido de carbono, Vênus sofre um intenso efeito estufa, resultando em temperaturas de superfície em torno de 462°C. Ela leva 225 dias terrestres para orbitar o Sol e gira lentamente no sentido contrário.`,
 
         description:`Venus, often called Earth's "sister planet," has a diameter of approximately 12,104 km, slightly smaller than Earth. With a mass of about 4.87 x 10²⁴ kg, it is 82% the mass of Earth. Its distance from Earth varies but can be around 38 million km. Venus is composed mainly of rocks and metals, with a metallic core, silicate mantle, and a thin crust. Known for its thick carbon dioxide atmosphere, Venus experiences an intense greenhouse effect, resulting in surface temperatures around 462°C. It takes 225 Earth days to orbit the Sun and rotates slowly in the opposite direction.`
     },
     earth: {
-        semiMajorAxis: 149.6,  // Unidade: milhões de km
+        semiMajorAxis: 149.6,  // Unidade: millions of kilometers
         eccentricity: 0.0167,
         inclination: THREE.MathUtils.degToRad(0.00005),  // Aproximado, em radianos
         longitudeOfAscendingNode: THREE.MathUtils.degToRad(-11.26064),  // Graus convertidos em radianos
@@ -55,17 +55,17 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(358.617),  // Graus convertidos em radianos
         epoch: 2451545.0, // Tempo juliano
         link: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_atmos_2048.jpg',
-        sizeOf: '10', //3.9
+        sizeOf: '3.9', //3.9
         name: 'earth',
         distance: '149.6 milhoes de quilometros',
 
-        descricao:`A Terra, com um diâmetro de cerca de 12.742 km, é o maior dos planetas rochosos do Sistema Solar. Ela tem uma massa de aproximadamente 5,97 x 10²⁴ kg e orbita o Sol a uma distância de cerca de 149,6 milhões de km (1 UA). A estrutura da Terra consiste em um núcleo interno sólido de ferro e níquel, um núcleo externo líquido, um manto de silicato e uma crosta sólida. Sua atmosfera é composta principalmente de nitrogênio (78%) e oxigênio (21%). A Terra leva 365,25 dias para orbitar o Sol e tem um satélite natural, a Lua. Seu campo magnético forte a protege da radiação solar.`,
+        descricao:`A Terra, com um diâmetro de cerca de 12.742 km, é o maior dos planetas rochosos do Sistema Solar. Ela tem uma massa de aproximadamente 5,97 x 10²⁴ kg e orbita o Sol a uma distância de cerca de 149,6 millions of kilometers (1 UA). A estrutura da Terra consiste em um núcleo interno sólido de ferro e níquel, um núcleo externo líquido, um manto de silicato e uma crosta sólida. Sua atmosfera é composta principalmente de nitrogênio (78%) e oxigênio (21%). A Terra leva 365,25 dias para orbitar o Sol e tem um satélite natural, a Lua. Seu campo magnético forte a protege da radiação solar.`,
         
         description:`The Earth, with a diameter of about 12,742 km, is the largest of the rocky planets in the Solar System. It has a mass of approximately 5.97 x 10²⁴ kg and orbits the Sun at a distance of about 149.6 million km (1 AU). Earth's structure consists of a solid iron-nickel inner core, a liquid outer core, a silicate mantle, and a solid crust. Its atmosphere is mainly nitrogen (78%) and oxygen (21%). Earth takes 365.25 days to orbit the Sun and has one natural satellite, the Moon. Its strong magnetic field shields it from solar radiation.`
       
     },
     moon: {
-        semiMajorAxis: 0.384,  // Unidade: milhões de km
+        semiMajorAxis: 0.384,  // Unidade: millions of kilometers
         eccentricity: 0.0549,
         inclination: THREE.MathUtils.degToRad(5.145),  // Aproximado, em radianos
         longitudeOfAscendingNode: THREE.MathUtils.degToRad(125.08),  // Graus convertidos em radianos
@@ -73,7 +73,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(115.365),  // Graus convertidos em radianos
         epoch: 2451545.0, // Tempo juliano
         link: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/moon_1024.jpg',
-        sizeOf: '3',
+        sizeOf: '1',
         distance: '384 mil km',
         name: 'moon',
 
@@ -91,17 +91,17 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(286.537),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(19.412),
         epoch: 2451545.0,
-        sizeOf: '10',
+        sizeOf: '2.7',
         link:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0ELDdWdnToVXeznMHPNmZPjB9-jKy1p68Q&s',
         name: 'Mars',
         distance:'227.9 milhoes de quilometros',
-        descricao:`Marte, o quarto planeta a partir do Sol, tem um diâmetro de aproximadamente 6.779 km, cerca de metade do tamanho da Terra. Com uma massa de 6,42 x 10²³ kg, Marte é aproximadamente 10,7% tão massivo quanto a Terra. Ele está localizado a cerca de 54,6 milhões de km da Terra, dependendo de suas posições orbitais. Marte tem um núcleo de ferro, níquel e enxofre, um manto rochoso e uma superfície rica em óxidos de ferro, que lhe dão sua cor vermelha distinta. Sua atmosfera fina, composta principalmente de dióxido de carbono (95%), não pode suportar água líquida estável. Marte leva 687 dias terrestres para orbitar o Sol e possui duas pequenas luas, Fobos e Deimos.`,
+        descricao:`Marte, o quarto planeta a partir do Sol, tem um diâmetro de aproximadamente 6.779 km, cerca de metade do tamanho da Terra. Com uma massa de 6,42 x 10²³ kg, Marte é aproximadamente 10,7% tão massivo quanto a Terra. Ele está localizado a cerca de 54,6 millions of kilometers da Terra, dependendo de suas posições orbitais. Marte tem um núcleo de ferro, níquel e enxofre, um manto rochoso e uma superfície rica em óxidos de ferro, que lhe dão sua cor vermelha distinta. Sua atmosfera fina, composta principalmente de dióxido de carbono (95%), não pode suportar água líquida estável. Marte leva 687 dias terrestres para orbitar o Sol e possui duas pequenas luas, Fobos e Deimos.`,
        
         description:`Mars, the fourth planet from the Sun, has a diameter of approximately 6,779 km, about half of Earth's size. With a mass of 6.42 x 10²³ kg, Mars is around 10.7% as massive as Earth. It lies about 54.6 million km from Earth, depending on their orbital positions. Mars has a core of iron, nickel, and sulfur, a rocky mantle, and a surface rich in iron oxides, giving it a distinctive red hue. Its thin atmosphere, primarily composed of carbon dioxide (95%), cannot support stable liquid water. Mars takes 687 Earth days to orbit the Sun and has two small moons, Phobos and Deimos.`
       
     },
     phobos: {
-        semiMajorAxis: 0.0069,  // Unidade: milhões de km (aproximadamente 6,9 km)
+        semiMajorAxis: 0.0069,  // Unidade: millions of kilometers (aproximadamente 6,9 km)
         eccentricity: 0.0151,
         inclination: THREE.MathUtils.degToRad(1.08),
         longitudeOfAscendingNode: THREE.MathUtils.degToRad(113.68),
@@ -115,7 +115,7 @@ export const orbitalElements = {
         
     },
     deimos: {
-        semiMajorAxis: 0.0235,  // Unidade: milhões de km (aproximadamente 23,5 km)
+        semiMajorAxis: 0.0235,  // Unidade: millions of kilometers (aproximadamente 23,5 km)
         eccentricity: 0.0007,
         inclination: THREE.MathUtils.degToRad(0.93),
         longitudeOfAscendingNode: THREE.MathUtils.degToRad(174.91),
@@ -140,7 +140,7 @@ export const orbitalElements = {
         name: 'Jupter',
         sizeOf: '45', 
         distance: '1.2 bilhões de quilometros',
-        descricao: `Júpiter, o quinto planeta a partir do Sol, tem um diâmetro de cerca de 139.820 km, sendo 11 vezes maior que a Terra. Com uma massa 318 vezes a da Terra, ele é composto principalmente de hidrogênio e hélio. Sua atmosfera é conhecida por tempestades intensas, incluindo a Grande Mancha Vermelha. Júpiter está a cerca de 588 milhões de km da Terra e leva quase 12 anos terrestres para orbitar o Sol. Ele possui 79 luas conhecidas, incluindo Io, Europa, Ganimedes e Calisto.`,
+        descricao: `Júpiter, o quinto planeta a partir do Sol, tem um diâmetro de cerca de 139.820 km, sendo 11 vezes maior que a Terra. Com uma massa 318 vezes a da Terra, ele é composto principalmente de hidrogênio e hélio. Sua atmosfera é conhecida por tempestades intensas, incluindo a Grande Mancha Vermelha. Júpiter está a cerca de 588 millions of kilometers da Terra e leva quase 12 anos terrestres para orbitar o Sol. Ele possui 79 luas conhecidas, incluindo Io, Europa, Ganimedes e Calisto.`,
 
         description: `Jupiter, the fifth planet from the Sun, has a diameter of about 139,820 km, making it 11 times larger than Earth. With a mass 318 times that of Earth, it is primarily composed of hydrogen and helium. Its atmosphere is known for intense storms, including the Great Red Spot. Jupiter is about 588 million km from Earth and takes nearly 12 Earth years to orbit the Sun. It has 79 known moons, including Io, Europa, Ganymede, and Callisto.`
 
