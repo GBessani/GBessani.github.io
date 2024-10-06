@@ -82,6 +82,9 @@ let phobosOrbit = { radius: 7, speed: orbitalSpeeds.phobos, angle: 0 };
 let deimosOrbit = { radius: 5, speed: orbitalSpeeds.deimos, angle: 90 };
 let jupiterOrbit = { radius: 450, speed: orbitalSpeeds.saturn, angle: 0 };
 let saturnOrbit = { radius: 600, speed: orbitalSpeeds.saturn, angle: 0 };
+let uranusOrbit = { radius: 700, speed: orbitalSpeeds.saturn, angle: 0 };
+let neptuneOrbit = { radius: 800, speed: orbitalSpeeds.saturn, angle: 0 };
+let plutoOrbit = { radius: 850, speed: orbitalSpeeds.saturn, angle: 0 };
 
 // Velocidades de rotação mais realistas (em radianos por quadro)
 
@@ -94,6 +97,9 @@ const phobosRotationSpeed = 0.001;
 const deimosRotationSpeed = 0.001;
 const jupiterRotationSpeed = 0.003;
 const saturnRotationSpeed = 0.005;
+const uranusRotationSpeed = 0.002;
+const neptuneRotationSpeed = 0.002;
+const plutoRotationSpeed = 0.001;
 
 
 // Animação
@@ -107,7 +113,10 @@ function animate() {
         { orbit: phobosOrbit, index: 5 },
         { orbit: deimosOrbit, index: 6 },
         { orbit: jupiterOrbit, index: 7 },
-        { orbit: saturnOrbit, index: 8 }
+        { orbit: saturnOrbit, index: 8 },
+        { orbit: uranusOrbit, index: 9 },
+        { orbit: neptuneOrbit, index: 10 },
+        { orbit: plutoOrbit, index: 11 }
     ];
 
     const rotationSpeeds = [
@@ -119,7 +128,10 @@ function animate() {
         phobosRotationSpeed,
         deimosRotationSpeed,
         jupiterRotationSpeed,
-        saturnRotationSpeed
+        saturnRotationSpeed,
+        uranusRotationSpeed,
+        neptuneRotationSpeed,
+        plutoRotationSpeed
     ];
 
     // Atualiza a movimentação orbital e rotação dos planetas em loop
