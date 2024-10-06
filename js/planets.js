@@ -22,10 +22,14 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(29.124),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(174.796),
         epoch: 2451545.0,
+        sizeOf: '1.5',
         link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHHhttyRZnbpliW8ftwD7BQUZs6aTPmI7eQ&s',
-        name: 'Mercúrio',
-        sizeOf: '10', //1.5
-        distance: '58 milhões de km'
+        name: 'Mercurio',
+        distance:'57.9 milhoes de quilometros',
+
+        descricao:`Mercúrio, o planeta mais próximo do Sol, tem um diâmetro de aproximadamente 4.880 km e uma massa de 3,3 x 10²³ kg. A distância mínima entre Mercúrio e a Terra é de cerca de 77 milhões de km. Composto principalmente de metais e silicatos, seu núcleo de ferro ocupa cerca de 75% do raio do planeta. Mercúrio não possui uma atmosfera densa, mas sim uma exosfera composta de oxigênio, sódio, hidrogênio, hélio e potássio, resultando em grandes variações de temperatura. Ele orbita o Sol em 88 dias terrestres.`,
+        
+        description:`Mercury, the closest planet to the Sun, has a diameter of approximately 4,880 km and a mass of 3.3 x 10²³ kg. The minimum distance between Mercury and Earth is about 77 million km. Composed mainly of metals and silicates, its iron core occupies about 75% of the planet's radius. Mercury lacks a dense atmosphere, having instead an exosphere made of oxygen, sodium, hydrogen, helium, and potassium, leading to extreme temperature variations. It orbits the Sun in 88 Earth days.`
     },
     venus: {
         semiMajorAxis: 108.2,
@@ -35,10 +39,14 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(131.532),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(50.115),
         epoch: 2451545.0,
+        sizeOf: '3.7',
         link: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg',
-        name: 'Vênus',
-        sizeOf: '10', //3.7
-        distance: '108 milhões de km'
+        name: 'Venus',
+        distance: '108.2 milhoes de quilometros',
+
+        descricao:`Vênus, frequentemente chamada de "planeta irmão da Terra", tem um diâmetro de aproximadamente 12.104 km, ligeiramente menor que a Terra. Com uma massa de cerca de 4,87 x 10²⁴ kg, é 82% da massa da Terra. Sua distância da Terra varia, mas pode chegar a cerca de 38 milhões de km. Vênus é composta principalmente de rochas e metais, com um núcleo metálico, manto de silicato e uma crosta fina. Conhecida por sua espessa atmosfera de dióxido de carbono, Vênus sofre um intenso efeito estufa, resultando em temperaturas de superfície em torno de 462°C. Ela leva 225 dias terrestres para orbitar o Sol e gira lentamente no sentido contrário.`,
+
+        description:`Venus, often called Earth's "sister planet," has a diameter of approximately 12,104 km, slightly smaller than Earth. With a mass of about 4.87 x 10²⁴ kg, it is 82% the mass of Earth. Its distance from Earth varies but can be around 38 million km. Venus is composed mainly of rocks and metals, with a metallic core, silicate mantle, and a thin crust. Known for its thick carbon dioxide atmosphere, Venus experiences an intense greenhouse effect, resulting in surface temperatures around 462°C. It takes 225 Earth days to orbit the Sun and rotates slowly in the opposite direction.`
     },
     earth: {
         semiMajorAxis: 149.6,  // Unidade: milhões de km
@@ -49,7 +57,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(358.617),  // Graus convertidos em radianos
         epoch: 2451545.0, // Tempo juliano
         link: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_atmos_2048.jpg',
-        sizeOf: '10', //3.9
+        sizeOf: '3.9',
         name: 'Terra',
         distance: '149.6 milhoes de quilometros',
 
@@ -67,7 +75,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(115.365),  // Graus convertidos em radianos
         epoch: 2451545.0, // Tempo juliano
         link: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/moon_1024.jpg',
-        sizeOf: '3',
+        sizeOf: '1',
         distance: '384 mil km',
         name: 'lua',
 
@@ -77,42 +85,7 @@ export const orbitalElements = {
         
        
     },
-    venus: {
-        semiMajorAxis: 108.2,
-        eccentricity: 0.0067,
-        inclination: THREE.MathUtils.degToRad(3.39),
-        longitudeOfAscendingNode: THREE.MathUtils.degToRad(76.680),
-        argumentOfPeriapsis: THREE.MathUtils.degToRad(131.532),
-        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(50.115),
-        epoch: 2451545.0,
-        sizeOf: '10',
-        link: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg',
-        name: 'Venus',
-        distance: '108.2 milhoes de quilometros',
-
-        descricao:`Vênus, frequentemente chamada de "planeta irmão da Terra", tem um diâmetro de aproximadamente 12.104 km, ligeiramente menor que a Terra. Com uma massa de cerca de 4,87 x 10²⁴ kg, é 82% da massa da Terra. Sua distância da Terra varia, mas pode chegar a cerca de 38 milhões de km. Vênus é composta principalmente de rochas e metais, com um núcleo metálico, manto de silicato e uma crosta fina. Conhecida por sua espessa atmosfera de dióxido de carbono, Vênus sofre um intenso efeito estufa, resultando em temperaturas de superfície em torno de 462°C. Ela leva 225 dias terrestres para orbitar o Sol e gira lentamente no sentido contrário.`,
-
-        description:`Venus, often called Earth's "sister planet," has a diameter of approximately 12,104 km, slightly smaller than Earth. With a mass of about 4.87 x 10²⁴ kg, it is 82% the mass of Earth. Its distance from Earth varies but can be around 38 million km. Venus is composed mainly of rocks and metals, with a metallic core, silicate mantle, and a thin crust. Known for its thick carbon dioxide atmosphere, Venus experiences an intense greenhouse effect, resulting in surface temperatures around 462°C. It takes 225 Earth days to orbit the Sun and rotates slowly in the opposite direction.`
-       
-    },
-    mercury: {
-        semiMajorAxis: 57.91,
-        eccentricity: 0.2056,
-        inclination: THREE.MathUtils.degToRad(7.005),
-        longitudeOfAscendingNode: THREE.MathUtils.degToRad(48.331),
-        argumentOfPeriapsis: THREE.MathUtils.degToRad(29.124),
-        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(174.796),
-        epoch: 2451545.0,
-        sizeOf: '10',
-        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHHhttyRZnbpliW8ftwD7BQUZs6aTPmI7eQ&s',
-        name: 'Mercurio',
-        distance:'57.9 milhoes de quilometros',
-
-        descricao:`Mercúrio, o planeta mais próximo do Sol, tem um diâmetro de aproximadamente 4.880 km e uma massa de 3,3 x 10²³ kg. A distância mínima entre Mercúrio e a Terra é de cerca de 77 milhões de km. Composto principalmente de metais e silicatos, seu núcleo de ferro ocupa cerca de 75% do raio do planeta. Mercúrio não possui uma atmosfera densa, mas sim uma exosfera composta de oxigênio, sódio, hidrogênio, hélio e potássio, resultando em grandes variações de temperatura. Ele orbita o Sol em 88 dias terrestres.`,
-        
-        description:`Mercury, the closest planet to the Sun, has a diameter of approximately 4,880 km and a mass of 3.3 x 10²³ kg. The minimum distance between Mercury and Earth is about 77 million km. Composed mainly of metals and silicates, its iron core occupies about 75% of the planet's radius. Mercury lacks a dense atmosphere, having instead an exosphere made of oxygen, sodium, hydrogen, helium, and potassium, leading to extreme temperature variations. It orbits the Sun in 88 Earth days.`
-      
-    },
+    
     mars: {
         semiMajorAxis: 227.9,
         eccentricity: 0.0934,
@@ -121,7 +94,7 @@ export const orbitalElements = {
         argumentOfPeriapsis: THREE.MathUtils.degToRad(286.537),
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(19.412),
         epoch: 2451545.0,
-        sizeOf: '10',
+        sizeOf: '2.7',
         link:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0ELDdWdnToVXeznMHPNmZPjB9-jKy1p68Q&s',
         name: 'Marte',
         distance:'227.9 milhoes de quilometros',
@@ -140,7 +113,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link: 'https://lh4.googleusercontent.com/proxy/_J0h01q8yY5_bB1jm52HTUYUgqKvM-O0XT86aVczsQLGApv0_pzwy_Y7R-SMro96-2CXcZuC0XjGtcJbX7E1EGcKqW0p4C86jwaFCaMRUPSObfljziHw',
         name: 'Phobos',
-        sizeOf: '2', //1.5
+        sizeOf: '0.5', //1.5
         distance: '58 milhões de quilometros'
     },
     deimos: {
@@ -153,7 +126,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link:'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5938ae9e-47de-424a-8836-f98e6658d37b/dczaq88-d97d6ecd-a233-48a8-b1bc-74fd3327f95c.png/v1/fill/w_1264,h_632,q_70,strp/deimos_texture_map_by_askaniy_dczaq88-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjA0OCIsInBhdGgiOiJcL2ZcLzU5MzhhZTllLTQ3ZGUtNDI0YS04ODM2LWY5OGU2NjU4ZDM3YlwvZGN6YXE4OC1kOTdkNmVjZC1hMjMzLTQ4YTgtYjFiYy03NGZkMzMyN2Y5NWMucG5nIiwid2lkdGgiOiI8PTQwOTYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.hNuoyXLVNFXX4E21fnZN6hAhDAW1VPNBsNdDzYwmGhk',
         name: 'Deimos',
-        sizeOf: '2', //0.004
+        sizeOf: '0.4', //0.004
         distance: '23,5 mil km'
     },
     
@@ -187,7 +160,7 @@ export const orbitalElements = {
         
         description:`Saturn, the second-largest planet in the solar system, has a diameter of about 116,460 km and a mass 95 times that of Earth. It orbits the Sun at a distance of approximately 1.43 billion km, taking 29.5 Earth years to complete one orbit. Composed mainly of hydrogen (96%) and helium (3%), Saturn lacks a solid surface. Its atmosphere features cloud bands, and it is renowned for its iconic ring system made of ice and rock. Saturn has 83 known moons, including Titan, larger than Mercury, and Enceladus, with subsurface oceans indicated by icy geysers.`
 
-    }
+    }, 
 
 };
 

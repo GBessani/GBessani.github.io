@@ -78,8 +78,8 @@ let moonOrbit = { radius: 30, speed: orbitalSpeeds.moon, angle: 0 };
 let venusOrbit = { radius: 108, speed: orbitalSpeeds.venus, angle: 0 };
 let mercuryOrbit = { radius: 58, speed: orbitalSpeeds.mercury, angle: 0 };
 let marsOrbit = { radius: 228, speed: orbitalSpeeds.mars, angle: 0 };
-let phobosOrbit = { radius: 30, speed: orbitalSpeeds.phobos, angle: 0 };
-let deimosOrbit = { radius: 30, speed: orbitalSpeeds.deimos, angle: 90 };
+let phobosOrbit = { radius: 7, speed: orbitalSpeeds.phobos, angle: 0 };
+let deimosOrbit = { radius: 5, speed: orbitalSpeeds.deimos, angle: 90 };
 let jupiterOrbit = { radius: 450, speed: orbitalSpeeds.saturn, angle: 0 };
 let saturnOrbit = { radius: 600, speed: orbitalSpeeds.saturn, angle: 0 };
 
