@@ -29,7 +29,7 @@ const ambientLight = new THREE.AmbientLight(0xffffff, 0.3); // Aumentar a intens
 scene.add(ambientLight);
 
 // Luz do Sol (PointLight) para simular a iluminação (agora branca)
-const sunLight = new THREE.PointLight(0xffffff, 4.0, 1500);  // Intensidade e alcance ajustados
+const sunLight = new THREE.PointLight(0xffffff, 4.0, 3000);  // Intensidade e alcance ajustados
 sunLight.position.set(0, 0, 0);  // No centro da cena, onde está o Sol
 sunLight.castShadow = true;  // Habilitar sombras
 sunLight.shadow.mapSize.width = 2048;  // Alta resolução de sombras
@@ -98,33 +98,41 @@ const saturnRotationSpeed = 0.005;
 
 // Animação
 function animate() {
-        // Movimentação orbital
-        earthOrbit.angle = updateOrbit(planets[2], earthOrbit.radius, earthOrbit.speed, earthOrbit.angle);
-        moonOrbit.angle = updateOrbit(planets[3], moonOrbit.radius, moonOrbit.speed, moonOrbit.angle);
-        venusOrbit.angle = updateOrbit(planets[1], venusOrbit.radius, venusOrbit.speed, venusOrbit.angle);
-        mercuryOrbit.angle = updateOrbit(planets[0], mercuryOrbit.radius, mercuryOrbit.speed, mercuryOrbit.angle);
-        marsOrbit.angle = updateOrbit(planets[4], marsOrbit.radius, marsOrbit.speed, marsOrbit.angle);
-        phobosOrbit.angle = updateOrbit(planets[5], phobosOrbit.radius, phobosOrbit.speed, phobosOrbit.angle);
-        deimosOrbit.angle = updateOrbit(planets[6], deimosOrbit.radius, deimosOrbit.speed, deimosOrbit.angle);
-        jupiterOrbit.angle = updateOrbit(planets[7], jupiterOrbit.radius, jupiterOrbit.speed, jupiterOrbit.angle);
-        saturnOrbit.angle = updateOrbit(planets[8], saturnOrbit.radius, saturnOrbit.speed, saturnOrbit.angle);
+    const orbits = [
+        { orbit: mercuryOrbit, index: 0 },
+        { orbit: venusOrbit, index: 1 },
+        { orbit: earthOrbit, index: 2 },
+        { orbit: moonOrbit, index: 3 },
+        { orbit: marsOrbit, index: 4 },
+        { orbit: phobosOrbit, index: 5 },
+        { orbit: deimosOrbit, index: 6 },
+        { orbit: jupiterOrbit, index: 7 },
+        { orbit: saturnOrbit, index: 8 }
+    ];
 
-        // Rotação dos planetas
-        planets[0].rotation.y += mercuryRotationSpeed;
-        planets[1].rotation.y += venusRotationSpeed;
-        planets[2].rotation.y += earthRotationSpeed;
-        planets[3].rotation.y += moonRotationSpeed;
-        planets[4].rotation.y += marsRotationSpeed;
-        planets[5].rotation.y += phobosRotationSpeed;
-        planets[6].rotation.y += deimosRotationSpeed;
-        planets[7].rotation.y += jupiterRotationSpeed;
-        planets[8].rotation.y += saturnRotationSpeed;
-    
-    
+    const rotationSpeeds = [
+        mercuryRotationSpeed,
+        venusRotationSpeed,
+        earthRotationSpeed,
+        moonRotationSpeed,
+        marsRotationSpeed,
+        phobosRotationSpeed,
+        deimosRotationSpeed,
+        jupiterRotationSpeed,
+        saturnRotationSpeed
+    ];
+
+    // Atualiza a movimentação orbital e rotação dos planetas em loop
+    orbits.forEach(({ orbit, index }) => {
+        orbit.angle = updateOrbit(planets[index], orbit.radius, orbit.speed, orbit.angle);
+        planets[index].rotation.y += rotationSpeeds[index];
+    });
+
     // Renderização
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
 }
+
 
 animate();
 
