@@ -61,7 +61,7 @@ export function resetCameraPosition() {
 }
 
 // Função para resetar a posição da câmera
-function resetCameraToOriginalPosition() {
+export function resetCameraToOriginalPosition() {
     stopCamera = true;
     const duration = 1;  // duração da animação
     const startPosition = camera.position.clone();

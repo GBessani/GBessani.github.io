@@ -25,7 +25,10 @@ export const orbitalElements = {
         link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHHhttyRZnbpliW8ftwD7BQUZs6aTPmI7eQ&s',
         name: 'Mercury',
         sizeOf: '10', //1.5
-        distance: '58 milhões de km'
+        distance: '58 milhões de km',
+        descricao:`Mercúrio, o planeta mais próximo do Sol, tem um diâmetro de aproximadamente 4.880 km e uma massa de 3,3 x 10²³ kg. A distância mínima entre Mercúrio e a Terra é de cerca de 77 milhões de km. Composto principalmente de metais e silicatos, seu núcleo de ferro ocupa cerca de 75% do raio do planeta. Mercúrio não possui uma atmosfera densa, mas sim uma exosfera composta de oxigênio, sódio, hidrogênio, hélio e potássio, resultando em grandes variações de temperatura. Ele orbita o Sol em 88 dias terrestres.`,
+        
+        description:`Mercury, the closest planet to the Sun, has a diameter of approximately 4,880 km and a mass of 3.3 x 10²³ kg. The minimum distance between Mercury and Earth is about 77 million km. Composed mainly of metals and silicates, its iron core occupies about 75% of the planet's radius. Mercury lacks a dense atmosphere, having instead an exosphere made of oxygen, sodium, hydrogen, helium, and potassium, leading to extreme temperature variations. It orbits the Sun in 88 Earth days.`
     },
     venus: {
         semiMajorAxis: 108.2,
@@ -38,7 +41,10 @@ export const orbitalElements = {
         link: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg',
         name: 'Venus',
         sizeOf: '10', //3.7
-        distance: '108 milhões de km'
+        distance: '108 milhões de km',
+        descricao:`Vênus, frequentemente chamada de "planeta irmão da Terra", tem um diâmetro de aproximadamente 12.104 km, ligeiramente menor que a Terra. Com uma massa de cerca de 4,87 x 10²⁴ kg, é 82% da massa da Terra. Sua distância da Terra varia, mas pode chegar a cerca de 38 milhões de km. Vênus é composta principalmente de rochas e metais, com um núcleo metálico, manto de silicato e uma crosta fina. Conhecida por sua espessa atmosfera de dióxido de carbono, Vênus sofre um intenso efeito estufa, resultando em temperaturas de superfície em torno de 462°C. Ela leva 225 dias terrestres para orbitar o Sol e gira lentamente no sentido contrário.`,
+
+        description:`Venus, often called Earth's "sister planet," has a diameter of approximately 12,104 km, slightly smaller than Earth. With a mass of about 4.87 x 10²⁴ kg, it is 82% the mass of Earth. Its distance from Earth varies but can be around 38 million km. Venus is composed mainly of rocks and metals, with a metallic core, silicate mantle, and a thin crust. Known for its thick carbon dioxide atmosphere, Venus experiences an intense greenhouse effect, resulting in surface temperatures around 462°C. It takes 225 Earth days to orbit the Sun and rotates slowly in the opposite direction.`
     },
     earth: {
         semiMajorAxis: 149.6,  // Unidade: milhões de km
@@ -77,42 +83,6 @@ export const orbitalElements = {
         
        
     },
-    venus: {
-        semiMajorAxis: 108.2,
-        eccentricity: 0.0067,
-        inclination: THREE.MathUtils.degToRad(3.39),
-        longitudeOfAscendingNode: THREE.MathUtils.degToRad(76.680),
-        argumentOfPeriapsis: THREE.MathUtils.degToRad(131.532),
-        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(50.115),
-        epoch: 2451545.0,
-        sizeOf: '10',
-        link: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg',
-        name: 'Venus',
-        distance: '108.2 milhoes de quilometros',
-
-        descricao:`Vênus, frequentemente chamada de "planeta irmão da Terra", tem um diâmetro de aproximadamente 12.104 km, ligeiramente menor que a Terra. Com uma massa de cerca de 4,87 x 10²⁴ kg, é 82% da massa da Terra. Sua distância da Terra varia, mas pode chegar a cerca de 38 milhões de km. Vênus é composta principalmente de rochas e metais, com um núcleo metálico, manto de silicato e uma crosta fina. Conhecida por sua espessa atmosfera de dióxido de carbono, Vênus sofre um intenso efeito estufa, resultando em temperaturas de superfície em torno de 462°C. Ela leva 225 dias terrestres para orbitar o Sol e gira lentamente no sentido contrário.`,
-
-        description:`Venus, often called Earth's "sister planet," has a diameter of approximately 12,104 km, slightly smaller than Earth. With a mass of about 4.87 x 10²⁴ kg, it is 82% the mass of Earth. Its distance from Earth varies but can be around 38 million km. Venus is composed mainly of rocks and metals, with a metallic core, silicate mantle, and a thin crust. Known for its thick carbon dioxide atmosphere, Venus experiences an intense greenhouse effect, resulting in surface temperatures around 462°C. It takes 225 Earth days to orbit the Sun and rotates slowly in the opposite direction.`
-       
-    },
-    mercury: {
-        semiMajorAxis: 57.91,
-        eccentricity: 0.2056,
-        inclination: THREE.MathUtils.degToRad(7.005),
-        longitudeOfAscendingNode: THREE.MathUtils.degToRad(48.331),
-        argumentOfPeriapsis: THREE.MathUtils.degToRad(29.124),
-        meanAnomalyAtEpoch: THREE.MathUtils.degToRad(174.796),
-        epoch: 2451545.0,
-        sizeOf: '10',
-        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHHhttyRZnbpliW8ftwD7BQUZs6aTPmI7eQ&s',
-        name: 'Mercury',
-        distance:'57.9 milhoes de quilometros',
-
-        descricao:`Mercúrio, o planeta mais próximo do Sol, tem um diâmetro de aproximadamente 4.880 km e uma massa de 3,3 x 10²³ kg. A distância mínima entre Mercúrio e a Terra é de cerca de 77 milhões de km. Composto principalmente de metais e silicatos, seu núcleo de ferro ocupa cerca de 75% do raio do planeta. Mercúrio não possui uma atmosfera densa, mas sim uma exosfera composta de oxigênio, sódio, hidrogênio, hélio e potássio, resultando em grandes variações de temperatura. Ele orbita o Sol em 88 dias terrestres.`,
-        
-        description:`Mercury, the closest planet to the Sun, has a diameter of approximately 4,880 km and a mass of 3.3 x 10²³ kg. The minimum distance between Mercury and Earth is about 77 million km. Composed mainly of metals and silicates, its iron core occupies about 75% of the planet's radius. Mercury lacks a dense atmosphere, having instead an exosphere made of oxygen, sodium, hydrogen, helium, and potassium, leading to extreme temperature variations. It orbits the Sun in 88 Earth days.`
-      
-    },
     mars: {
         semiMajorAxis: 227.9,
         eccentricity: 0.0934,
@@ -142,6 +112,7 @@ export const orbitalElements = {
         name: 'Phobos',
         sizeOf: '2', //1.5
         distance: '58 milhões de quilometros'
+        
     },
     deimos: {
         semiMajorAxis: 0.0235,  // Unidade: milhões de km (aproximadamente 23,5 km)
@@ -168,7 +139,11 @@ export const orbitalElements = {
         link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1YV8717y2fhv0VOsDmEmFzKS7qGviXG3PQ&s',
         name: 'Jupter',
         sizeOf: '45', 
-        distance: '1.2 bilhões de quilometros'
+        distance: '1.2 bilhões de quilometros',
+        descricao: `Júpiter, o quinto planeta a partir do Sol, tem um diâmetro de cerca de 139.820 km, sendo 11 vezes maior que a Terra. Com uma massa 318 vezes a da Terra, ele é composto principalmente de hidrogênio e hélio. Sua atmosfera é conhecida por tempestades intensas, incluindo a Grande Mancha Vermelha. Júpiter está a cerca de 588 milhões de km da Terra e leva quase 12 anos terrestres para orbitar o Sol. Ele possui 79 luas conhecidas, incluindo Io, Europa, Ganimedes e Calisto.`,
+
+        description: `Jupiter, the fifth planet from the Sun, has a diameter of about 139,820 km, making it 11 times larger than Earth. With a mass 318 times that of Earth, it is primarily composed of hydrogen and helium. Its atmosphere is known for intense storms, including the Great Red Spot. Jupiter is about 588 million km from Earth and takes nearly 12 Earth years to orbit the Sun. It has 79 known moons, including Io, Europa, Ganymede, and Callisto.`
+
     },
 
     saturn: {

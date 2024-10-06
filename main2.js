@@ -1,8 +1,8 @@
 
 import {createPlanet, createAllPlanets, orbitalElements} from './js/planets.js';
 import {updateOrbit} from './js/orbits.js';
-import { showPlanetInfo } from './js/hud.js';
-import { centerOnPlanet } from './js/camera.js';
+import { showPlanetInfo, hidePlanetInfo } from './js/hud.js';
+import { centerOnPlanet, resetCameraToOriginalPosition } from './js/camera.js';
 
 export const scene = new THREE.Scene();
 export const camera = new THREE.PerspectiveCamera(45, (window.innerWidth/100*85) / (window.innerHeight-4), 0.1, 3000);
@@ -178,7 +178,13 @@ window.addEventListener('resize', () => {
 export function procurar(){
     let valor = document.getElementById("nome-do-planeta").value;
     console.log("funcionou")
-    centerOnPlanet(planets[valor])
+    resetCameraToOriginalPosition()
+    
+    function fck(){
+        centerOnPlanet(planets[valor]);
+    }
+
+    setTimeout(fck, 1000);
 }
 
 document.getElementById("nome-do-planeta").addEventListener("change", procurar);
