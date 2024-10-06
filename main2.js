@@ -9,7 +9,7 @@ export const camera = new THREE.PerspectiveCamera(45, (window.innerWidth/100*85)
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth/100*85, window.innerHeight-4);
-renderer.shadowMap.enabled = false; // Habilitar sombras
+renderer.shadowMap.enabled = true; // Habilitar sombras
 document.getElementById('earth-container').appendChild(renderer.domElement);
 
 // Carregador de texturas
@@ -50,14 +50,14 @@ let isPaused = false;
 // Períodos orbitais (aproximados em anos e dias da Terra)
 
 const orbitalPeriods = {
-    earth: 3650,
+    earth: 365,
     moon: 273,
-    venus: 2250,
-    mercury: 880,
-    mars: 6870,
+    venus: 225,
+    mercury: 88,
+    mars: 687,
     phobos: 12.5,
-    deimos: 3.3,
-    saturn: 107590 // Saturno: 29.5 anos terrestres
+    deimos: 30.3,
+    saturn: 10759 // Saturno: 29.5 anos terrestres
 };
 
 // Conversão dos períodos orbitais em velocidades de translação
