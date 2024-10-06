@@ -23,7 +23,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(174.796),
         epoch: 2451545.0,
         link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHHhttyRZnbpliW8ftwD7BQUZs6aTPmI7eQ&s',
-        name: 'Mercúrio',
+        name: 'Mercury',
         sizeOf: '10', //1.5
         distance: '58 milhões de km'
     },
@@ -36,7 +36,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(50.115),
         epoch: 2451545.0,
         link: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg',
-        name: 'Vênus',
+        name: 'Venus',
         sizeOf: '10', //3.7
         distance: '108 milhões de km'
     },
@@ -50,7 +50,7 @@ export const orbitalElements = {
         epoch: 2451545.0, // Tempo juliano
         link: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_atmos_2048.jpg',
         sizeOf: '10', //3.9
-        name: 'Terra',
+        name: 'earth',
         distance: '149.6 milhoes de quilometros',
 
         descricao:`A Terra, com um diâmetro de cerca de 12.742 km, é o maior dos planetas rochosos do Sistema Solar. Ela tem uma massa de aproximadamente 5,97 x 10²⁴ kg e orbita o Sol a uma distância de cerca de 149,6 milhões de km (1 UA). A estrutura da Terra consiste em um núcleo interno sólido de ferro e níquel, um núcleo externo líquido, um manto de silicato e uma crosta sólida. Sua atmosfera é composta principalmente de nitrogênio (78%) e oxigênio (21%). A Terra leva 365,25 dias para orbitar o Sol e tem um satélite natural, a Lua. Seu campo magnético forte a protege da radiação solar.`,
@@ -69,7 +69,7 @@ export const orbitalElements = {
         link: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/moon_1024.jpg',
         sizeOf: '3',
         distance: '384 mil km',
-        name: 'lua',
+        name: 'moon',
 
         descricao:`A Lua, único satélite natural da Terra, tem um diâmetro de aproximadamente 3.474 km, o que a torna o quinto maior satélite do Sistema Solar. Sua massa é de cerca de 7,35 x 10²² kg, ou cerca de 1,2% da massa da Terra. A Lua orbita a uma distância média de 384.400 km da Terra. Sua composição inclui uma crosta feita de basalto e anortosito, um manto rico em magnésio e ferro, e um pequeno núcleo de ferro. A Lua tem uma exosfera extremamente fina e nenhum campo magnético significativo, com sua superfície marcada por crateras, montanhas e planícies.`,
         
@@ -105,7 +105,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         sizeOf: '10',
         link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHHhttyRZnbpliW8ftwD7BQUZs6aTPmI7eQ&s',
-        name: 'Mercurio',
+        name: 'Mercury',
         distance:'57.9 milhoes de quilometros',
 
         descricao:`Mercúrio, o planeta mais próximo do Sol, tem um diâmetro de aproximadamente 4.880 km e uma massa de 3,3 x 10²³ kg. A distância mínima entre Mercúrio e a Terra é de cerca de 77 milhões de km. Composto principalmente de metais e silicatos, seu núcleo de ferro ocupa cerca de 75% do raio do planeta. Mercúrio não possui uma atmosfera densa, mas sim uma exosfera composta de oxigênio, sódio, hidrogênio, hélio e potássio, resultando em grandes variações de temperatura. Ele orbita o Sol em 88 dias terrestres.`,
@@ -123,7 +123,7 @@ export const orbitalElements = {
         epoch: 2451545.0,
         sizeOf: '10',
         link:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0ELDdWdnToVXeznMHPNmZPjB9-jKy1p68Q&s',
-        name: 'Marte',
+        name: 'Mars',
         distance:'227.9 milhoes de quilometros',
         descricao:`Marte, o quarto planeta a partir do Sol, tem um diâmetro de aproximadamente 6.779 km, cerca de metade do tamanho da Terra. Com uma massa de 6,42 x 10²³ kg, Marte é aproximadamente 10,7% tão massivo quanto a Terra. Ele está localizado a cerca de 54,6 milhões de km da Terra, dependendo de suas posições orbitais. Marte tem um núcleo de ferro, níquel e enxofre, um manto rochoso e uma superfície rica em óxidos de ferro, que lhe dão sua cor vermelha distinta. Sua atmosfera fina, composta principalmente de dióxido de carbono (95%), não pode suportar água líquida estável. Marte leva 687 dias terrestres para orbitar o Sol e possui duas pequenas luas, Fobos e Deimos.`,
        
@@ -181,14 +181,14 @@ export const orbitalElements = {
         epoch: 2451545.0,
         link: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e0763947-6f42-4d09-944f-c2d6f41c415b/dcaift0-422ad564-f7b0-4291-914f-425b9ac29a35.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UwNzYzOTQ3LTZmNDItNGQwOS05NDRmLWMyZDZmNDFjNDE1YlwvZGNhaWZ0MC00MjJhZDU2NC1mN2IwLTQyOTEtOTE0Zi00MjViOWFjMjlhMzUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YYTxK1xSwJxGTBIMLHsgFWiwrdd0W6UqmXy7a5CCnnk',
         sizeOf: '39',
-        name: 'Saturno',
+        name: 'Saturn',
         distance: '1.43 bilhões de quilometros',
         descricao: `Saturno, o segundo maior planeta do sistema solar, tem um diâmetro de cerca de 116.460 km e uma massa 95 vezes maior que a da Terra. Ele orbita o Sol a uma distância de aproximadamente 1,43 bilhões de km, levando 29,5 anos terrestres para completar uma órbita. Composto principalmente de hidrogênio (96%) e hélio (3%), Saturno não possui uma superfície sólida. Sua atmosfera apresenta faixas de nuvens, e ele é famoso por seu icônico sistema de anéis feitos de gelo e rocha. Saturno tem 83 luas conhecidas, incluindo Titã, maior que Mercúrio, e Encélado, com oceanos subterrâneos indicados por gêiseres de gelo.`,
         
         description:`Saturn, the second-largest planet in the solar system, has a diameter of about 116,460 km and a mass 95 times that of Earth. It orbits the Sun at a distance of approximately 1.43 billion km, taking 29.5 Earth years to complete one orbit. Composed mainly of hydrogen (96%) and helium (3%), Saturn lacks a solid surface. Its atmosphere features cloud bands, and it is renowned for its iconic ring system made of ice and rock. Saturn has 83 known moons, including Titan, larger than Mercury, and Enceladus, with subsurface oceans indicated by icy geysers.`
 
     },
-    urano: {
+    uranus: {
         semiMajorAxis: 2870,
         eccentricity: 0.0457,
         inclination: THREE.MathUtils.degToRad(0.772),
@@ -197,14 +197,14 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(142.238),
         epoch: 2451545.0,
         link: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Solarsystemscope_texture_2k_uranus.jpg',
-        name: 'Urano',
+        name: 'Uranus',
         sizeOf: '16',
         distance: '2.87 bilhões de quilometros',
         descricao:`Urano, o sétimo planeta do sistema solar, tem um diâmetro de cerca de 50.724 km e uma massa 14,5 vezes maior que a da Terra. Ele orbita o Sol a uma distância de aproximadamente 2,87 bilhões de km, levando 84 anos terrestres para completar uma órbita. Composto principalmente de gelo de água, amônia e metano, Urano tem uma atmosfera de hidrogênio e hélio. Ele é conhecido por seu eixo de rotação inclinado, que o faz girar de lado. Urano tem 27 luas conhecidas, incluindo Miranda, com falésias de 20
         km de altura, e Titânia, a maior lua do planeta.`,
         description:`Uranus, the seventh planet in the solar system, has a diameter of about 50,724 km and a mass 14.5 times that of Earth. It orbits the Sun at a distance of approximately 2.87 billion km, taking 84 Earth years to complete one orbit. Composed mainly of water ice, ammonia, and methane, Uranus has an atmosphere of hydrogen and helium. It is known for its inclined rotation axis, causing it to spin on its side. Uranus has 27 known moons, including Miranda, with 20 km-high cliffs, and Titania, the planet's largest moon.`
     },
-    netuno: {
+    neptune: {
         semiMajorAxis: 4495,
         eccentricity: 0.0113,
         inclination: THREE.MathUtils.degToRad(1.769),
@@ -213,7 +213,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(256.228),
         epoch: 2451545.0,
         link: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3dbe3745-0eb8-4e98-aac3-197221ef117e/dc28qg7-205f3f54-cc0d-44cf-9b1f-b70183f553ba.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNkYmUzNzQ1LTBlYjgtNGU5OC1hYWMzLTE5NzIyMWVmMTE3ZVwvZGMyOHFnNy0yMDVmM2Y1NC1jYzBkLTQ0Y2YtOWIxZi1iNzAxODNmNTUzYmEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.b26fzftjNAlpM5G2sgSR1Ycmov1xfSpi-87Z6KKKTOw',
-        name: 'Netuno',
+        name: 'Neptune',
         sizeOf: '15.9',
         distance: '4.495 bilhões de quilometros',
         descricao:`Netuno, o oitavo planeta do sistema solar, tem um diâmetro de cerca de 49.244 km e uma massa 17 vezes maior que a da Terra. Ele orbita o Sol a uma distância de aproximadamente 4,495 bilhões de km, levando 165 anos terrestres para completar uma órbita. Composto principalmente de gelo de água, amônia e metano, Netuno tem uma atmosfera de hidrogênio e hélio. Ele é conhec
@@ -229,7 +229,7 @@ export const orbitalElements = {
         meanAnomalyAtEpoch: THREE.MathUtils.degToRad(14.53),
         epoch: 2451545.0,
         link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDRMGpu-SpayOOQYlcr3R1b3U46vBbIx6HDQ&s',
-        name: 'Plutão',
+        name: 'Pluto',
         sizeOf: '1.35',
         distance: '5.906 bilhões de quilometros',
         descricao:`Plutão, um planeta anão no sistema solar, tem um diâmetro de cerca de 2.377 km e uma massa 0,0022 vezes a da Terra. Ele orbita o Sol a uma distância de aproximadamente 5,906 bilhões de km, levando 248 anos terrestres para completar uma órbita. Composto principalmente de gelo de água, metano e nitrogênio, Plutão tem uma atmosfera de nitrogênio, metano e monóxido de carbono. Ele é conhecido por sua lua Caronte, que é quase do mesmo tamanho que Plutão e orbita em um sistema binário com ele.`,
