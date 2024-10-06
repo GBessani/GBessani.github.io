@@ -18,7 +18,7 @@ const textureLoader = new THREE.TextureLoader();
 
 
 // Criação do Sol com brilho emissivo
-const sun = createPlanet(80, 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Map_of_the_full_sun.jpg/1280px-Map_of_the_full_sun.jpg', 0xffdd00, textureLoader);
+const sun = createPlanet(75, 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Map_of_the_full_sun.jpg/1280px-Map_of_the_full_sun.jpg', 0xffdd00, textureLoader);
 sun.castShadow = false; // O Sol não projeta sombra
 scene.add(sun);
 
@@ -86,7 +86,7 @@ const orbitalSpeeds = {
 let earthOrbit = { radius: 200, speed: orbitalSpeeds.earth, angle: 0 };
 let moonOrbit = { radius: 30, speed: orbitalSpeeds.moon, angle: 0 };
 let venusOrbit = { radius: 138, speed: orbitalSpeeds.venus, angle: 0 };
-let mercuryOrbit = { radius: 58, speed: orbitalSpeeds.mercury, angle: 0 };
+let mercuryOrbit = { radius: 90, speed: orbitalSpeeds.mercury, angle: 0 };
 let marsOrbit = { radius: 290, speed: orbitalSpeeds.mars, angle: 0 };
 let phobosOrbit = { radius: 7, speed: orbitalSpeeds.phobos, angle: 0 };
 let deimosOrbit = { radius: 5, speed: orbitalSpeeds.deimos, angle: 90 };

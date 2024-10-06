@@ -246,12 +246,17 @@ export function createAllPlanets(textureLoader, scene) {
         planet.name = orbitalElements[planetName].name;
         planet.size = orbitalElements[planetName].sizeOf;
         planet.distance = orbitalElements[planetName].distance;
-        planet.descricao = orbitalElements[planetName].descricao;
+        planet.description = orbitalElements[planetName].description;
         planets.push(planet);
         scene.add(planet);
         let NomeParaAdicionar = document.getElementById("nome-do-planeta");
-        NomeParaAdicionar.innerHTML = NomeParaAdicionar.innerHTML + `<option value="${num}">${planet.name}</option>`;
-        num++;
+        
+        if(planetName == 'moon' || planetName == 'phobos' || planetName == 'deimos' ){
+           
+            NomeParaAdicionar.innerHTML = NomeParaAdicionar.innerHTML
+            
+        }else{ NomeParaAdicionar.innerHTML = NomeParaAdicionar.innerHTML + `<option value="${num}">${planet.name}</option>`;}
+        num++
         
     }
     planets[2].add(planets[3]);
