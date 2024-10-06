@@ -150,7 +150,12 @@ function animate() {
     orbits.forEach(({ orbit, index }) => {
         let velo = document.getElementById('velocidade').value;
         orbit.angle = updateOrbit(planets[index], orbit.radius, orbit.speed * velo, orbit.angle);
-        planets[index].rotation.y += rotationSpeeds[index];
+        if(index == 9){
+            planets[index].rotation.x += rotationSpeeds[index] * velo;
+        }else{
+            planets[index].rotation.y += rotationSpeeds[index] * velo;
+        }
+        
     });
 
     // Renderização
