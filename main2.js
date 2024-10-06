@@ -56,7 +56,7 @@ const orbitalPeriods = {
     mercury: 880,
     mars: 6870,
     phobos: 12.5,
-    deimos: 30.3,
+    deimos: 3.3,
     saturn: 107590 // Saturno: 29.5 anos terrestres
 };
 
@@ -67,7 +67,7 @@ const orbitalSpeeds = {
     venus: 1 / orbitalPeriods.venus,
     mercury: 1 / orbitalPeriods.mercury,
     mars: 1 / orbitalPeriods.mars,
-    phobos: 1 /orbitalPeriods.phobos,
+    phobos: 1 / orbitalPeriods.phobos,
     deimos: 1 / orbitalPeriods.deimos,
     saturn: 1 / orbitalPeriods.saturn
 };
@@ -78,8 +78,8 @@ let moonOrbit = { radius: 30, speed: orbitalSpeeds.moon, angle: 0 };
 let venusOrbit = { radius: 108, speed: orbitalSpeeds.venus, angle: 0 };
 let mercuryOrbit = { radius: 58, speed: orbitalSpeeds.mercury, angle: 0 };
 let marsOrbit = { radius: 228, speed: orbitalSpeeds.mars, angle: 0 };
-let phobosOrbit = { radius: 30, speed: orbitalSpeeds.deimos, angle: 0 };
-let deimosOrbit = { radius: 30, speed: orbitalSpeeds.deimos, angle: 0 };
+let phobosOrbit = { radius: 30, speed: orbitalSpeeds.phobos, angle: 0 };
+let deimosOrbit = { radius: 30, speed: orbitalSpeeds.deimos, angle: 90 };
 let jupiterOrbit = { radius: 450, speed: orbitalSpeeds.saturn, angle: 0 };
 let saturnOrbit = { radius: 600, speed: orbitalSpeeds.saturn, angle: 0 };
 
